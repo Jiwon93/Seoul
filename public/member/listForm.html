@@ -17,7 +17,10 @@
 			th, td {
 				text-align: center;
 			}
-		
+			
+			#customerset {
+				list-style: none;
+			}	
 		
 		</style>
 
@@ -27,13 +30,13 @@
 	<form action="">
 		<nav class="navbar bg-light">
 		  <div class="container-fluid">
-		    <a class="navbar-brand" href="#">
-		      <img src="./image/logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
-		      인생만렙
-		    </a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 		      <span class="navbar-toggler-icon"></span>
 		    </button>
+		    <a class="navbar-brand" href="#">
+		      <img src="./image/logo.png" alt="" width="30" height="30" class="align-text-top">
+		      인생만렙
+		    </a>
 		  </div>
 		</nav>
 		<br><br>
@@ -52,9 +55,20 @@
 		</div>
 		<br><br>
 		<div>
-			<span class="col-2" style="float: left; font-size: 25px"><b>회원관리</b></span>
+			<div class="col-2 bg-light" style="float: left; height: 360px;" id="customerset">
+				<b style="font-size: 25px">회원관리</b>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
 			<table class="col-10 container-fluid">
-				<tr>
+				<tr class="bg-dark" style="color: white;">
 					<th><input type="checkbox" id=""></th>
 					<th>No.</th>
 					<th>분류</th>
