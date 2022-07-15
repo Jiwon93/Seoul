@@ -41,7 +41,7 @@
 		    	<img src="./image/logo.png" alt="" width="40" height="40" class="align-text-top">
 		    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 		      <div class="offcanvas-header">
-		        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ㅇㅅㅁㄹ</h5>
+		        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./image/logo.png" alt="" width="40" height="40" class="align-text-top"></h5>
 		        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		      </div>
 		      <div class="offcanvas-body">
@@ -90,60 +90,69 @@
 		<br><br>
 		<div class="container">
 			<div class="row">
-				<div class="input-group mb-3">
-				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">선택</button>
+				<div class="col input-group">
+				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">분류</button>
+				  <ul class="dropdown-menu">
+				    <li><a class="dropdown-item" href="#">전체</a></li>
+				    <li><a class="dropdown-item" href="#">판매</a></li>
+				    <li><a class="dropdown-item" href="#">일반</a></li>
+				  </ul>
+			    </div>
+			    <div class="col-2 input-group">
+				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">성별</button>
 				  <ul class="dropdown-menu">
 				  	<li><a class="dropdown-item" href="#">전체</a></li>
-				    <li><a class="dropdown-item" href="#">분류</a></li>
-				    <li><a class="dropdown-item" href="#">이름</a></li>
-				    <li><a class="dropdown-item" href="#">성별</a></li>
-				    <li><a class="dropdown-item" href="#">주소</a></li>
-				  	<li><a class="dropdown-item" href="#">상태</a></li>
+				  	<li><a class="dropdown-item" href="#">남자</a></li>
+				  	<li><a class="dropdown-item" href="#">여자</a></li>
 				  </ul>
-				  <input type="text" class="form-control" aria-label="Text input with dropdown button">
-				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">선택</button>
+			    </div>
+				<div class="col-2 input-group"> 
+				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">상태</button>
 				  <ul class="dropdown-menu">
 				  	<li><a class="dropdown-item" href="#">전체</a></li>
+				  	<li><a class="dropdown-item" href="#">활성</a></li>
+				  	<li><a class="dropdown-item" href="#">휴면</a></li>
 				  </ul>
-				  <input type="text" class="form-control" aria-label="Text input with dropdown button">
-				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">선택</button>
+			    </div>
+			    <div class="col-2 input-group"> 
+				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">가입일</button>
 				  <ul class="dropdown-menu">
 				  	<li><a class="dropdown-item" href="#">전체</a></li>
+				  	<li><a class="dropdown-item" href="#">1주일</a></li>
+				  	<li><a class="dropdown-item" href="#">1달</a></li>
+				  	<li><a class="dropdown-item" href="#">3달</a></li>
+				  	<li><a class="dropdown-item" href="#">6달</a></li>
+				  	<li><a class="dropdown-item" href="#">1년</a></li>
+				  	<li><a class="dropdown-item" href="#">1년 이상</a></li>
 				  </ul>
-				  <input type="text" class="form-control" aria-label="Text input with dropdown button">
-				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">선택</button>
+			    </div>
+			    <div class="col-4 input-group"> 
+				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">비밀번호 변경일</button>
 				  <ul class="dropdown-menu">
 				  	<li><a class="dropdown-item" href="#">전체</a></li>
+				  	<li><a class="dropdown-item" href="#">1주일</a></li>
+				  	<li><a class="dropdown-item" href="#">1달</a></li>
+				  	<li><a class="dropdown-item" href="#">3달</a></li>
+				  	<li><a class="dropdown-item" href="#">6달</a></li>
+				  	<li><a class="dropdown-item" href="#">1년</a></li>
+				  	<li><a class="dropdown-item" href="#">1년 이상</a></li>
 				  </ul>
-				  <input type="text" class="form-control" aria-label="Text input with dropdown button">
-					<a class="btn btn-dark" href="#" role="button">
-						<i class="fa-solid fa-magnifying-glass"></i>
-					</a>
-					<a class="btn btn-warning opacity-75" href="#" role="button">
-						<i class="fa-solid fa-arrow-rotate-left"></i>
-					</a>
+				  <a class="btn btn-primary opacity-75" href="#" role="button">
+				  	<i class="fa-solid fa-square-check"></i>
+				  </a>
+				  <a class="btn btn-warning opacity-75" href="#" role="button">
+					<i class="fa-solid fa-arrow-rotate-left"></i>
+				  </a>
 				</div>
-				<div class="input-group mb-3">
-				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">선택</button>
+				<div class="col-6 input-group">
+				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">검색어</button>
 				  <ul class="dropdown-menu">
 				  	<li><a class="dropdown-item" href="#">전체</a></li>
+				  	<li><a class="dropdown-item" href="#">이름</a></li>
+				  	<li><a class="dropdown-item" href="#">이메일</a></li>
+				  	<li><a class="dropdown-item" href="#">주소</a></li>
 				  </ul>
-				  <input type="text" class="form-control" aria-label="Text input with dropdown button">
-				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">선택</button>
-				  <ul class="dropdown-menu">
-				  	<li><a class="dropdown-item" href="#">전체</a></li>
-				  </ul>
-				  <input type="text" class="form-control" aria-label="Text input with dropdown button">
-				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">선택</button>
-				  <ul class="dropdown-menu">
-				  	<li><a class="dropdown-item" href="#">전체</a></li>
-				  </ul>
-				  <input type="text" class="form-control" aria-label="Text input with dropdown button">
-				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">선택</button>
-				  <ul class="dropdown-menu">
-				  	<li><a class="dropdown-item" href="#">전체</a></li>
-				  </ul>
-				  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+				  <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="검색어를 입력해주세요.">
 					<a class="btn btn-dark" href="#" role="button">
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</a>
@@ -176,81 +185,83 @@
 								<th>관리</th>
 							</tr>
 						</thead>
-						<tr>
-							<td><input type="checkbox" name="member" onclick="checkselectAll();"></td>
-							<td>1</td>
-							<td>일반</td>
-							<td>한지민</td>
-							<td>min@naver.com</td>
-							<td>여</td>
-							<td>서울시 서초구</td>
-							<td>22.07.14</td>
-							<td>22.07.14</td>
-							<td>휴면</td>
-							<td>
-								<a href="#"><i class="fa-solid fa-gear"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" name="member" onclick="checkselectAll();"></td>
-							<td>2</td>
-							<td>판매</td>
-							<td>고수</td>
-							<td>gosu@naver.com</td>
-							<td>남</td>
-							<td>서울시 강남구</td>
-							<td>22.01.14</td>
-							<td>22.05.14</td>
-							<td>활성</td>
-							<td>
-								<a href="#"><i class="fa-solid fa-gear"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" name="member" onclick="checkselectAll();"></td>
-							<td>3</td>
-							<td>판매</td>
-							<td>고수</td>
-							<td>gosu@naver.com</td>
-							<td>남</td>
-							<td>서울시 강남구</td>
-							<td>22.01.14</td>
-							<td>22.05.14</td>
-							<td>활성</td>
-							<td>
-								<a href="#"><i class="fa-solid fa-gear"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" name="member" onclick="checkselectAll();"></td>
-							<td>4</td>
-							<td>판매</td>
-							<td>고수</td>
-							<td>gosu@naver.com</td>
-							<td>남</td>
-							<td>서울시 강남구</td>
-							<td>22.01.14</td>
-							<td>22.05.14</td>
-							<td>활성</td>
-							<td>
-								<a href="#"><i class="fa-solid fa-gear"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" name="member" onclick="checkselectAll();"></td>
-							<td>5</td>
-							<td>판매</td>
-							<td>고수</td>
-							<td>gosu@naver.com</td>
-							<td>남</td>
-							<td>서울시 강남구</td>
-							<td>22.01.14</td>
-							<td>22.05.14</td>
-							<td>활성</td>	
-							<td>
-								<a href="#"><i class="fa-solid fa-gear"></i></a>
-							</td>
-						</tr>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" name="member" onclick="checkselectAll();"></td>
+								<td>1</td>
+								<td>일반</td>
+								<td>한지민</td>
+								<td>min@naver.com</td>
+								<td>여</td>
+								<td>서울시 서초구</td>
+								<td>22.07.14</td>
+								<td>22.07.14</td>
+								<td>휴면</td>
+								<td>
+									<a href="#"><i class="fa-solid fa-gear"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="member" onclick="checkselectAll();"></td>
+								<td>2</td>
+								<td>판매</td>
+								<td>고수</td>
+								<td>gosu@naver.com</td>
+								<td>남</td>
+								<td>서울시 강남구</td>
+								<td>22.01.14</td>
+								<td>22.05.14</td>
+								<td>활성</td>
+								<td>
+									<a href="#"><i class="fa-solid fa-gear"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="member" onclick="checkselectAll();"></td>
+								<td>3</td>
+								<td>판매</td>
+								<td>고수</td>
+								<td>gosu@naver.com</td>
+								<td>남</td>
+								<td>서울시 강남구</td>
+								<td>22.01.14</td>
+								<td>22.05.14</td>
+								<td>활성</td>
+								<td>
+									<a href="#"><i class="fa-solid fa-gear"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="member" onclick="checkselectAll();"></td>
+								<td>4</td>
+								<td>판매</td>
+								<td>고수</td>
+								<td>gosu@naver.com</td>
+								<td>남</td>
+								<td>서울시 강남구</td>
+								<td>22.01.14</td>
+								<td>22.05.14</td>
+								<td>활성</td>
+								<td>
+									<a href="#"><i class="fa-solid fa-gear"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="member" onclick="checkselectAll();"></td>
+								<td>5</td>
+								<td>판매</td>
+								<td>고수</td>
+								<td>gosu@naver.com</td>
+								<td>남</td>
+								<td>서울시 강남구</td>
+								<td>22.01.14</td>
+								<td>22.05.14</td>
+								<td>활성</td>	
+								<td>
+									<a href="#"><i class="fa-solid fa-gear"></i></a>
+								</td>
+							</tr>
+						</tbody>
 					</table>	
 				</div>
 			</div>
