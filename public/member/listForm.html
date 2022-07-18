@@ -47,10 +47,10 @@
 		      <div class="offcanvas-body">
 		        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 		          <li class="nav-item">
-		            <a class="nav-link active" aria-current="page" href="#">로그인</a>
+		            <a class="nav-link active" aria-current="page" href="#">로그아웃</a>
 		          </li>
 		          <li class="nav-item">
-		            <a class="nav-link active" aria-current="page" href="#">회원가입</a>
+		            <a class="nav-link active" aria-current="page" href="#">마이페이지</a>
 		          </li>	
 		       	<hr>
 		          <li class="nav-item">
@@ -90,7 +90,7 @@
 		<br><br>
 		<div class="container">
 			<div class="row">
-				<div class="col input-group">
+				<div class="col-2 input-group-inline">
 				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" style="width: 150px;" data-bs-toggle="dropdown" aria-expanded="false">분류</button>
 				  <ul class="dropdown-menu">
 				    <li><a class="dropdown-item" href="#">전체</a></li>
@@ -98,7 +98,7 @@
 				    <li><a class="dropdown-item" href="#">일반</a></li>
 				  </ul>
 			    </div>
-			    <div class="col input-group">
+			    <div class="col-2 input-group-inline">
 				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" style="width: 150px;" data-bs-toggle="dropdown" aria-expanded="false">성별</button>
 				  <ul class="dropdown-menu">
 				  	<li><a class="dropdown-item" href="#">전체</a></li>
@@ -106,7 +106,7 @@
 				  	<li><a class="dropdown-item" href="#">여자</a></li>
 				  </ul>
 			    </div>
-				<div class="col input-group"> 
+				<div class="col-2 input-group-inline"> 
 				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" style="width: 150px;" data-bs-toggle="dropdown" aria-expanded="false">상태</button>
 				  <ul class="dropdown-menu">
 				  	<li><a class="dropdown-item" href="#">전체</a></li>
@@ -114,7 +114,7 @@
 				  	<li><a class="dropdown-item" href="#">휴면</a></li>
 				  </ul>
 			    </div>
-			    <div class="col input-group"> 
+			    <div class="col-2 input-group-inline"> 
 				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" style="width: 150px;" data-bs-toggle="dropdown" aria-expanded="false">가입일</button>
 				  <ul class="dropdown-menu">
 				  	<li><a class="dropdown-item" href="#">전체</a></li>
@@ -126,7 +126,7 @@
 				  	<li><a class="dropdown-item" href="#">1년 이상</a></li>
 				  </ul>
 			    </div>
-			    <div class="col input-group"> 
+			    <div class="col-4 input-group-inline"> 
 				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">비밀번호 변경일</button>
 				  <ul class="dropdown-menu">
 				  	<li><a class="dropdown-item" href="#">전체</a></li>
@@ -142,22 +142,24 @@
 		</div>
 		<br>
 		<div class="container">
-			<div class="col-6 input-group">
-			  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">검색어</button>
-			  <ul class="dropdown-menu">
-			  	<li><a class="dropdown-item" href="#">전체</a></li>
-			  	<li><a class="dropdown-item" href="#">이름</a></li>
-			  	<li><a class="dropdown-item" href="#">이메일</a></li>
-			  	<li><a class="dropdown-item" href="#">주소</a></li>
-			  </ul>
-			  <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="검색어를 입력해주세요.">
-				<a class="btn btn-dark" href="#" role="button">
-					<i class="fa-solid fa-magnifying-glass"></i>
-				</a>
-				<a class="btn btn-warning opacity-75" href="#" role="button">
-					<i class="fa-solid fa-arrow-rotate-left"></i>
-				</a>
-			</div>		
+			<div class="row">
+				<div class="col input-group">
+				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">검색어</button>
+				  <ul class="dropdown-menu">
+				  	<li><a class="dropdown-item" href="#">전체</a></li>
+				  	<li><a class="dropdown-item" href="#">이름</a></li>
+				  	<li><a class="dropdown-item" href="#">이메일</a></li>
+				  	<li><a class="dropdown-item" href="#">주소</a></li>
+				  </ul>
+				  <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="검색어를 입력해주세요.">
+					<a class="btn btn-dark" href="#" role="button">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</a>
+					<a class="btn btn-warning opacity-75" href="#" role="button">
+						<i class="fa-solid fa-arrow-rotate-left"></i>
+					</a>
+				</div>	
+			</div>
 		</div>
 		<br>
 		<div class="container">
@@ -216,14 +218,14 @@
 							<tr>
 								<td><input type="checkbox" name="member" onclick="checkselectAll();"></td>
 								<td>3</td>
-								<td>판매</td>
-								<td>고수</td>
-								<td>gosu@naver.com</td>
+								<td>일반</td>
+								<td>원빈</td>
+								<td>bean@naver.com</td>
 								<td>남</td>
-								<td>서울시 강남구</td>
+								<td>서울시 강서구</td>
 								<td>22.01.14</td>
-								<td>22.05.14</td>
-								<td>활성</td>
+								<td>22.01.14</td>
+								<td>휴면</td>
 								<td>
 									<a href="#"><i class="fa-solid fa-gear"></i></a>
 								</td>
@@ -231,13 +233,13 @@
 							<tr>
 								<td><input type="checkbox" name="member" onclick="checkselectAll();"></td>
 								<td>4</td>
-								<td>판매</td>
-								<td>고수</td>
-								<td>gosu@naver.com</td>
-								<td>남</td>
-								<td>서울시 강남구</td>
+								<td>일반</td>
+								<td>우영우</td>
+								<td>zero@naver.com</td>
+								<td>여</td>
+								<td>서울시 서초구</td>
 								<td>22.01.14</td>
-								<td>22.05.14</td>
+								<td>22.07.14</td>
 								<td>활성</td>
 								<td>
 									<a href="#"><i class="fa-solid fa-gear"></i></a>
@@ -247,12 +249,12 @@
 								<td><input type="checkbox" name="member" onclick="checkselectAll();"></td>
 								<td>5</td>
 								<td>판매</td>
-								<td>고수</td>
-								<td>gosu@naver.com</td>
-								<td>남</td>
+								<td>김다미</td>
+								<td>dami@naver.com</td>
+								<td>여</td>
 								<td>서울시 강남구</td>
 								<td>22.01.14</td>
-								<td>22.05.14</td>
+								<td>22.06.14</td>
 								<td>활성</td>	
 								<td>
 									<a href="#"><i class="fa-solid fa-gear"></i></a>
