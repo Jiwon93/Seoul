@@ -17,7 +17,7 @@
 </head>
 <body>
 	<!-- start -->
-	<form action="">
+	<form class="needs-validation" action="" novalidate>
 		<nav class="navbar bg-light fixed-top" id="">
 		  <div class="container-fluid">
 		  	<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -57,84 +57,147 @@
 		</nav>
 		<br><br><br>
 		<div class="container">
-			<h2 style="text-align: center;">회원가입</h2>
+			<ul class="nav nav-tabs">
+			  <li class="nav-item">
+			    <a class="nav-link active" aria-current="page" href="#">회원관리</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">코드관리</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">코드그룹관리</a>
+			  </li>
+			</ul>
 		</div>
 		<div class="container">
 			<img src="./image/hand.png" class="img-fluid" alt="...">
 		</div>
+		<br><br>
+		<div class="container">
+			<h2 style="text-align: center;">회원등록</h2>
+		</div>
 		<br>
 	  	<div class="container" id="allborder">
 		  	<div class="row justify-content-center">		
-			  <div class="col-6">
-			    <label for="inputEmail4" class="form-label">이메일</label>
-			    <input type="email" class="form-control" id="inputEmail4" placeholder="이메일을 입력해 주세요.">
-			  </div>
+			  	<div class="col-8">
+			  		<label for="inputEmail4" class="form-label">이메일</label>
+			  		<div class="input-group">
+				  		<input type="text" class="form-control" placeholder="Id" aria-label="Username">
+				  		<span class="input-group-text">@</span>
+				  		<input type="text" class="form-control" placeholder="eamil주소" aria-label="Server">
+				  		<select class="form-select">
+				  			<option>주소선택</option>
+				  			<option>naver.com</option>
+				  			<option>google.com</option>
+				  			<option>hanmail.net</option>
+				  			<option>직접입력</option>
+				  		</select>
+					</div>
+				</div>
 		  	</div>
 		  <br>
-		  <div class="row-2">
-			  <div class="col-6">
+		  <div class="row-2" style="float: none; margin: 100 auto;">
+			  <div class="col-8" style="float: none; margin: 0 auto;">
 			    <label for="inputPassword4" class="form-label">비밀번호</label>
-			    <input type="password" class="form-control" id="inputPassword4" placeholder="비밀번호를 입력해 주세요.(숫자+영문 8자리 이상)">
+			    <input type="password" class="form-control" id="inputPassword4" placeholder="비밀번호를 입력해 주세요.(숫자+영문 8자리 이상)" required>
+			  	<div class="valid-feedback">
+			      사용가능합니다.
+	    	  	</div>
+	    	  	<div class="invalid-feedback">
+			      비밀번호가 올바르게 입력되지 않았습니다.
+	    	  	</div>
 			  </div>
-			  <div class="col-6">
-			    <label for="inputPassword4" class="form-label">비밀번호 확인</label>
-			    <input type="password" class="form-control" id="inputPassword4" placeholder="한번 더 입력해 주세요.">
+			  <div class="col-8" style="float: none; margin: 0 auto;">
+			    <label for="inputPassword5" class="form-label">비밀번호 확인</label>
+			    <input type="password" class="form-control" id="inputPassword5" placeholder="한번 더 입력해 주세요." required>
+			  	<div class="valid-feedback">
+			      일치합니다.
+	    	  	</div>
+	    	  	<div class="invalid-feedback">
+			      일치하지 않습니다.
+	    	  	</div>
 			  </div>
 		  </div>
 		  <br>
-		  <div class="row justify-content-center">
-			  <div class="col-6">
+		  <div class="row" style="float: none; margin: 100 auto;">
+			  <div class="col-8" style="float: none; margin: 0 auto;">
 			  	<label for="inputName1" class="form-label">이름</label>
-			    <input type="text" class="form-control" placeholder="이름을 입력해주세요." aria-label="First name">
+			    <input type="text" class="form-control" id="inputName1" placeholder="이름을 입력해주세요." required>
+			  	<div class="valid-feedback">
+			      확인되었습니다.
+	    	  	</div>
+	    	  	<div class="invalid-feedback">
+			      이름이 입력되지 않았습니다.
+	    	  	</div>
 			  </div>
 		  </div>
 		  <br>
-		  <div class="row-2">
-			  <div class="col-6">
+		  <div class="row-2" style="float: none; margin: 100 auto;">
+			  <div class="col-8" style="float: none; margin: 0 auto;">
 			    <label for="inputAddress" class="form-label">
 			    	주소
 		    		<button type="button" class="btn btn-secondary text-white">검색 <i class="fa-solid fa-location-crosshairs"></i></button>
 		    	</label>
-			    <input type="text" class="form-control" id="inputAddress" placeholder="주소를 검색해 주세요." readonly>
+			    <input type="text" class="form-control" id="inputAddress" placeholder="주소를 검색해 주세요." required>
+			  	<div class="valid-feedback">
+			      확인되었습니다.
+	    	  	</div>
+	    	  	<div class="invalid-feedback">
+			      주소가 입력되지 않았습니다.
+	    	  	</div>
 			  </div>
-			  <div class="col-6">
+			  <div class="col-8" style="float: none; margin: 0 auto;">
 			  	 <label for="inputAddress" class="form-label">상세주소</label>
-			    <input type="text" class="form-control" id="inputAddress2" placeholder="상세주소를 입력해 주세요.">
+			    <input type="text" class="form-control" id="inputAddress2" placeholder="상세주소를 입력해 주세요." required>
+			  	<div class="valid-feedback">
+			      확인되었습니다.
+	    	  	</div>
+	    	  	<div class="invalid-feedback">
+			      상세주소가 입력되지 않았습니다.
+	    	  	</div>
 			  </div>
 		  </div>
 		  <br>
 		  <div class="row justify-content-center">
-		  	<div class="col-1">
-		  		<select id="inputCellphone" class="form-select">
-			      <option selected>선택</option>
-			      <option>010</option>
-			      <option>019</option>
-			      <option>011</option>
-			    </select>
-		    </div>
-			  <div class="col-5">
-			    <label for="inputCity" class="form-label">핸드폰</label>
-			    <input type="text" class="form-control" id="inputCity" placeholder="(-)제외하고 입력해주세요.">
-			  </div>
+		  	<div class="col-8">
+		  		<label for="inputCity" class="form-label">핸드폰</label>
+			  	<div class="input-group">
+				  	<select id="inputCellphone" class="form-select">
+				      <option>선택</option>
+				      <option>010</option>
+				      <option>019</option>
+				      <option>011</option>
+				    </select>
+				    <span class="input-group-text">-</span>
+				    <input type="text" class="form-control" required>
+				    <span class="input-group-text">-</span>
+				    <input type="text" class="form-control rounded-end" required>
+	    	  		<div class="invalid-feedback">
+	    	  			핸드폰 번호가 입력되지 않았습니다.
+	    	  		</div>
+			  	</div>
+		  	</div>
 		  </div>	
 		  <br>
 		  <div class="row justify-content-center">
-			  <div class="col-6">
+			  <div class="col-8">
 			    <label for="inputState" class="form-label">성별</label>
 			    <br>
 			    <div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
 				  <label class="form-check-label" for="inlineRadio1">남자</label>
 				</div>
 				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
 				  <label class="form-check-label" for="inlineRadio2">여자</label>
 				</div>
+				<div class="valid-feedback"></div>
+	    	  	<div class="invalid-feedback"></div>
 			</div>
 		  </div>
 		  <br>
 		  <div class="row justify-content-center">
-			  <div class="col-6">
+			  <div class="col-8">
 			    <label for="inputZip" class="form-label">생년월일</label>
 			    <input type="text" class="form-control" id="inputZip">
 			  </div>
@@ -142,7 +205,7 @@
 		  <br>
 		  <div class="row">
 			  <div class="col" style="text-align: left;">
-			    <button type="submit" class="btn btn-danger">뒤로가기</button>
+			    <button type="button" class="btn btn-danger" onclick="location.href='listForm.html'">뒤로가기</button>
 			  </div>
 			  <div class="col" style="text-align: right;">
 			    <button type="submit" class="btn btn-success">등록하기</button>
@@ -152,10 +215,27 @@
 	  	</div>	
 	</form>
 	
-	
-	
-	
-	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(() => {
+		  'use strict'
+	
+		  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+		  const forms = document.querySelectorAll('.needs-validation')
+	
+		  // Loop over them and prevent submission
+		  Array.from(forms).forEach(form => {
+		    form.addEventListener('submit', event => {
+		      if (!form.checkValidity()) {
+		        event.preventDefault()
+		        event.stopPropagation()
+		      }
+	
+		      form.classList.add('was-validated')
+		    }, false)
+		  })
+		})()
+	</script>
 </body>
 </html>
