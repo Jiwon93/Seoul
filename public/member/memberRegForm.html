@@ -10,7 +10,20 @@
 		#allborder {
 			border: 1px solid #E9E9E9;
 		}
-	
+		
+		.button {
+			display: flex;
+			justify-content: center;
+		}
+		
+		#chooseFileButton {
+			cursor: pointer;
+			font-size: 1em;
+		}
+		
+		#chooseFile {
+			visibility: hidden;
+		}
 	</style>
 	
 	<script src="https://kit.fontawesome.com/059fbc3cf8.js" crossorigin="anonymous"></script>
@@ -18,7 +31,7 @@
 </head>
 <body>
 	<!-- start -->
-	<form class="needs-validation" name="memberRegForm" action="" novalidate>
+	<form class="needs-validation" method="post" enctype="multipart/form-data" name="memberRegForm" action="" novalidate>
 		<nav class="navbar bg-light fixed-top" id="">
 		  <div class="container-fluid">
 		  	<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -78,10 +91,12 @@
 			<h2 style="text-align: center;">회원등록</h2>
 		</div>
 		<br>
-		<div>
-			<img src="..." class="rounded-circle" alt="...">
-			<input type="file" id="fileUpload" accept='image/*'>
+		<div class="button">
+			<label id="chooseFileButton" for="chooseFile">
+				프로필 등록
+			</label>
 		</div>
+		<input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
 	  	<div class="container" id="allborder">
 		  	<div class="row justify-content-center">		
 			  	<div class="col-8">
@@ -245,7 +260,7 @@
 		  	<div class="col-8">
 		  		<label for="inputCity" class="form-label">관심선택(중복 선택 가능)</label>
 			  	<div class="input-group">
-				  	<select id="favorite" class="form-select" onchange="handleOnChange(this)" multiple>
+				  	<select id="favorite" class="form-select" multiple>
 				      <option>선택</option>
 				      <option>디자인</option>
 				      <option>IT 프로그래밍</option>
@@ -286,7 +301,7 @@
 				      <option>이벤트</option>
 				      <option>레슨</option>
 				    </select>
-				    <select id="inputCellphone" class="form-select" multiple>
+				    <select name="detailField" id="detailField" class="form-select" onchange="selectDetailField();" multiple>
 				      <option>선택</option>
 				      <option>웹사이트 제작</option>
 				      <option>웹사이트 개선, 버그수정</option>
@@ -297,7 +312,7 @@
 				      <option>기획</option>
 				      <option>데이터 사이언스</option>
 				    </select>
-				    <input type="text" class="form-control">
+				    <input type="text" name="inputDetailField" id="inputDetailField" class="form-control">
 			  	</div>
 		  	</div>
 		  </div>
@@ -371,6 +386,10 @@
 		
 		function selectMails() {
 			document.memberRegForm.selectMail1.value = document.memberRegForm.selectMail2.value;
+		}
+		
+		function selectDetailField() {
+			document.memberRegForm.inputDetailField.value = document.memberRegForm.detailField.value;
 		}
 	</script>
 </body>
