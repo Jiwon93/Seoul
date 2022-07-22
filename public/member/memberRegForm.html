@@ -51,7 +51,7 @@
 		          <li class="nav-item">
 		            <a class="nav-link active" aria-current="page" href="#">회원가입</a>
 		          </li>	
-		       	<hr>
+	       	      <hr>
 		          <li class="nav-item">
 		            <a class="nav-link active" aria-current="page" href="#">Home</a>
 		          </li>
@@ -260,7 +260,7 @@
 		  	<div class="col-8">
 		  		<label for="inputCity" class="form-label">관심선택(중복 선택 가능)</label>
 			  	<div class="input-group">
-				  	<select id="favorite" class="form-select" multiple>
+				  	<select id="favorite" class="form-select" onchange="" multiple>
 				      <option>선택</option>
 				      <option>디자인</option>
 				      <option>IT 프로그래밍</option>
@@ -301,10 +301,10 @@
 				      <option>이벤트</option>
 				      <option>레슨</option>
 				    </select>
-				    <select name="detailField" id="good" class="form-select" multiple>
+				    <select name="" id="good" class="form-select" multiple>
 				      <option>선택</option>
 				    </select>
-				    <input type="text" name="inputDetailField" id="inputDetailField" class="form-control">
+				    <input type="text" name="" id="" class="form-control">
 			  	</div>
 		  	</div>
 		  </div>
@@ -434,10 +434,6 @@
 		
 		function selectMails() {
 			document.memberRegForm.selectMail1.value = document.memberRegForm.selectMail2.value;
-		}
-		
-		function selectDetailField() {
-			document.memberRegForm.inputDetailField.value = document.memberRegForm.detailField.value;
 		}
 	</script>
 </body>

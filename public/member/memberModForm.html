@@ -9,6 +9,11 @@
 	<link rel="stylesheet" href="./css/modForm.css">
 	<script src="https://kit.fontawesome.com/059fbc3cf8.js" crossorigin="anonymous"></script>
 	<style type="text/css">
+		.card {
+			display: flex;
+			justify-content: center;
+		}
+		
 		.button2 {
 			display: flex;
 			justify-content: center;
@@ -16,7 +21,11 @@
 		
 		#chooseFileButton2 {
 			cursor: pointer;
-			font-size: 1em;
+			font-size: 0.7em;
+			padding: 6px 20px;
+			background-color: #26890D;
+			border-radius: 4px;
+			color: white;
 		}
 		
 		#chooseFile2 {
@@ -48,7 +57,7 @@
 		          <li class="nav-item">
 		            <a class="nav-link active" aria-current="page" href="#">회원가입</a>
 		          </li>	
-		       	<hr>
+		          <hr>
 		          <li class="nav-item">
 		            <a class="nav-link active" aria-current="page" href="#">Home</a>
 		          </li>
@@ -85,15 +94,23 @@
 		</div>
 		<br><br>
 		<div class="container">
-			<h2 style="text-align: center;">회원등록</h2>
+			<h2 style="text-align: center;">회원정보수정</h2>
+		</div>
+		<div class="row">
+			<div class="col-2 offset-5">
+				<div class="card">
+		  			<img src="./image/2.png" class="card-img-top" alt="...">
+	  				<div class="button2">
+						<label id="chooseFileButton2" for="chooseFile2">
+							프로필 변경
+						</label>
+					</div>
+					<input class="" type="file" id="chooseFile2" name="chooseFile2" accept="image/*" required>
+				</div>	
+			</div>
 		</div>
 		<br>
-		<div class="button2">
-			<label id="chooseFileButton2" for="chooseFile2">
-				프로필 변경
-			</label>
-		</div>
-		<input class="real-upload" type="file" id="chooseFile2" name="chooseFile2" accept="image/*" required>
+		
 	  	<div class="container" id="allborder">
 		  	<div class="row justify-content-center">		
 			  	<div class="col-8">
@@ -217,7 +234,7 @@
 		  	<div class="col-8">
 		  		<label for="inputCity" class="form-label">관심선택(중복 선택 가능)</label>
 			  	<div class="input-group">
-				  	<select id="favorite" class="form-select" onchange="showValue(this)" multiple>
+				  	<select id="favorite" class="form-select" onchange="" multiple>
 				      <option>선택</option>
 				      <option>디자인</option>
 				      <option selected>IT 프로그래밍</option>
@@ -260,7 +277,7 @@
 				    </select>
 				    <select name="detailField2" id="detailField2" class="form-select" onchange="selectDetailField2();" multiple>
 				      <option>선택</option>
-				      <option>웹사이트 제작</option>
+				      <option selected>웹사이트 제작</option>
 				      <option>웹사이트 개선, 버그수정</option>
 				      <option>모바일앱 제작</option>
 				      <option>모바일앱 개선, 버그수정</option>
@@ -269,7 +286,7 @@
 				      <option>기획</option>
 				      <option>데이터 사이언스</option>
 				    </select>
-				    <input type="text" name="inputDetailField2" id="inputDetailField2" class="form-control">
+				    <input type="text" name="inputDetailField2" id="inputDetailField2" class="form-control" value="웹사이트 제작">
 			  	</div>
 		  	</div>
 		  </div>
@@ -300,7 +317,7 @@
 		  	<div class="col-8">
 		  		<label for="inputCity" class="form-label">희망급여(단위, 만원)</label>
 			  	<div class="input-group">
-			  		<input type="text" class="form-control" value="4,500" oninput="this.value=this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
+			  		<input type="text" class="form-control" value="4,500" oninput="this.value=this.value.replace(/[^0-9,]/g, '').replace(/(\..*)\./g, '$1');">
 			  	</div>
 		  	</div>
 		  </div>
