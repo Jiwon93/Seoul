@@ -196,7 +196,7 @@
 								<td>22.07.14</td>
 								<td>휴면</td>
 								<td>
-									<a href="#"><i class="fa-solid fa-gear"></i></a>
+									<a href="memberModForm.html"><i class="fa-solid fa-gear"></i></a>
 								</td>
 							</tr>
 							<tr>
@@ -211,7 +211,7 @@
 								<td>22.05.14</td>
 								<td>활성</td>
 								<td>
-									<a href="#"><i class="fa-solid fa-gear"></i></a>
+									<a href="memberModForm.html"><i class="fa-solid fa-gear"></i></a>
 								</td>
 							</tr>
 							<tr>
@@ -226,7 +226,7 @@
 								<td>22.01.14</td>
 								<td>휴면</td>
 								<td>
-									<a href="#"><i class="fa-solid fa-gear"></i></a>
+									<a href="memberModForm.html"><i class="fa-solid fa-gear"></i></a>
 								</td>
 							</tr>
 							<tr>
@@ -241,7 +241,7 @@
 								<td>22.07.14</td>
 								<td>활성</td>
 								<td>
-									<a href="#"><i class="fa-solid fa-gear"></i></a>
+									<a href="memberModForm.html"><i class="fa-solid fa-gear"></i></a>
 								</td>
 							</tr>
 							<tr>
@@ -256,7 +256,7 @@
 								<td>22.06.14</td>
 								<td>활성</td>	
 								<td>
-									<a href="#"><i class="fa-solid fa-gear"></i></a>
+									<a href="memberModForm.html"><i class="fa-solid fa-gear"></i></a>
 								</td>
 							</tr>
 						</tbody>
@@ -283,8 +283,8 @@
 			</nav>
 		</div>
 		<div class="container">
-			<button type="button" class="btn btn-warning"><i class="fa-solid fa-trash-can"></i> 삭제</button>
-			<button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> 삭제</button>
+			<button type="button" class="btn btn-warning" id="listD" onclick="listDel();"><i class="fa-solid fa-trash-can"></i> 삭제</button>
+			<button type="button" class="btn btn-danger" id="memberListD" onclick="memberListDel();"><i class="fa-solid fa-trash-can"></i> 삭제</button>
 			<button type="button" class="btn btn-secondary" style="float: right;" onclick="location.href='memberRegForm.html'">회원등록</button>
 			<button type="button" class="btn btn-success" style="float: right;"><i class="fa-solid fa-file-pdf"></i> 다운</button>
 		</div>
@@ -317,6 +317,18 @@
 			  checkboxes.forEach((checkbox) => {
 			    checkbox.checked = selectAll.checked
 			  })
+			}
+			
+			function listDel() {
+				alert("목록에서 삭제하시겠습니까?");
+				location.href='memberListForm.html';
+				document.getElementById("listD").submit();
+			}
+			
+			function memberListDel() {
+				alert("아예 삭제하시겠습니까?");
+				location.href='memberListForm.html';
+				document.getElementById("memberListD").submit();
 			}
 	</script>
 </body>
