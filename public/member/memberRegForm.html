@@ -285,11 +285,11 @@
 		  	<div class="col-8">
 		  		<label for="inputCity" class="form-label">전문분야 및 상세분야(중복 선택 가능)</label>
 			  	<div class="input-group">
-				  	<select id="specialty" class="form-select" multiple>
+				  	<select id="specialty" class="form-select" onchange="categoryChange(this)" multiple>
 				      <option>선택</option>
-				      <option>디자인</option>
-				      <option>IT 프로그래밍</option>
-				      <option>영상 사진 음향</option>
+				      <option value="a">디자인</option>
+				      <option value="b">IT 프로그래밍</option>
+				      <option value="c">영상 사진 음향</option>
 				      <option>마케팅</option>
 				      <option>번역 통역</option>
 				      <option>문서 글쓰기</option>
@@ -301,16 +301,8 @@
 				      <option>이벤트</option>
 				      <option>레슨</option>
 				    </select>
-				    <select name="detailField" id="detailField" class="form-select" onchange="selectDetailField();" multiple>
+				    <select name="detailField" id="good" class="form-select" multiple>
 				      <option>선택</option>
-				      <option>웹사이트 제작</option>
-				      <option>웹사이트 개선, 버그수정</option>
-				      <option>모바일앱 제작</option>
-				      <option>모바일앱 개선, 버그수정</option>
-				      <option>프로그램 개발</option>
-				      <option>게임</option>
-				      <option>기획</option>
-				      <option>데이터 사이언스</option>
 				    </select>
 				    <input type="text" name="inputDetailField" id="inputDetailField" class="form-control">
 			  	</div>
@@ -419,6 +411,26 @@
 	            return true;
 	          }
 	    }
+		
+		function categoryChange(e) {
+			var good_a = ["Photoshop", "Illustrator", "Creative Suite", "Dreamweaver", "Flash", "XD", "Indesign"];
+			var good_b = ["JavaScript", "Java", "Python", "PHP", "C#", "React", "JSP", "ASP", "Node.js", "Bootstrap", "HTML", "CSS"];
+			var good_c = ["촬영", "편집", "후보정", "제작총괄", "인물", "제품", "프로필", "음식", "기타"];
+			var target = document.getElementById("good");
+
+			if(e.value == "a") var d = good_a;
+			else if(e.value == "b") var d = good_b;
+			else if(e.value == "c") var d = good_c;
+
+			target.options.length = 0;
+
+			for (x in d) {
+				var opt = document.createElement("option");
+				opt.value = d[x];
+				opt.innerHTML = d[x];
+				target.appendChild(opt);
+			}
+		}
 		
 		function selectMails() {
 			document.memberRegForm.selectMail1.value = document.memberRegForm.selectMail2.value;
