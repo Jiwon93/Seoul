@@ -10,6 +10,19 @@
 		#allborder {
 			border: 1px solid #E9E9E9;
 		}
+		
+		.box {
+		    width: 150px;
+		    height: 150px; 
+		    border: 1px solid #E9E9E9;
+		    border-radius: 70%;
+		    overflow: hidden;
+		}
+		.profile {
+		    width: 100%;
+		    height: 100%;
+		    object-fit: cover;
+		}
 		 
 		.button {
 			display: flex;
@@ -18,7 +31,11 @@
 		
 		#chooseFileButton {
 			cursor: pointer;
-			font-size: 1em;
+			font-size: 0.7em;
+			padding: 6px 20px;
+			background-color: #26890D;
+			border-radius: 4px;
+			color: white;
 		}
 		
 		#chooseFile {
@@ -27,7 +44,6 @@
 	</style>
 	
 	<script src="https://kit.fontawesome.com/059fbc3cf8.js" crossorigin="anonymous"></script>
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
 	<!-- start -->
@@ -91,12 +107,20 @@
 			<h2 style="text-align: center;">회원등록</h2>
 		</div>
 		<br>
-		<div class="button">
-			<label id="chooseFileButton" for="chooseFile">
-				프로필 등록
-			</label>
+		<div class="row">
+			<div class="col-2 offset-6">
+				<div class="box" id="image_box">
+		  			<img id="preciew" src="" class="profile" alt="사진영역">
+				</div>
+				<div class="button">
+					<label id="chooseFileButton" for="chooseFile">
+						프로필 변경
+					</label>
+				</div>
+				<input class="" type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="readURL(this);" required>	
+			</div>
 		</div>
-		<input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+		<br>
 	  	<div class="container" id="allborder">
 		  	<div class="row justify-content-center">		
 			  	<div class="col-8">
@@ -376,7 +400,6 @@
 	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<script type="text/javascript">
-		
 		(() => {
 		  'use strict'
 	

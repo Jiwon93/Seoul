@@ -93,66 +93,60 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-2 input-group-inline">
-				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" style="width: 150px;" data-bs-toggle="dropdown" aria-expanded="false">분류</button>
-				  <ul class="dropdown-menu">
-				    <li><a class="dropdown-item" href="#">전체</a></li>
-				    <li><a class="dropdown-item" href="#">판매</a></li>
-				    <li><a class="dropdown-item" href="#">일반</a></li>
-				  </ul>
+				  <select class="form-select">
+				    <option>전체</option>
+				    <option>판매</option>
+				    <option>일반</option>
+				  </select>
 			    </div>
 			    <div class="col-2 input-group-inline">
-				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" style="width: 150px;" data-bs-toggle="dropdown" aria-expanded="false">성별</button>
-				  <ul class="dropdown-menu">
-				  	<li><a class="dropdown-item" href="#">전체</a></li>
-				  	<li><a class="dropdown-item" href="#">남자</a></li>
-				  	<li><a class="dropdown-item" href="#">여자</a></li>
-				  </ul>
+				  <select class="form-select">
+				  	<option>전체</option>
+				  	<option>남자</option>
+				  	<option>여자</option>
+				  </select>
 			    </div>
 				<div class="col-2 input-group-inline"> 
-				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" style="width: 150px;" data-bs-toggle="dropdown" aria-expanded="false">상태</button>
-				  <ul class="dropdown-menu">
-				  	<li><a class="dropdown-item" href="#">전체</a></li>
-				  	<li><a class="dropdown-item" href="#">활성</a></li>
-				  	<li><a class="dropdown-item" href="#">휴면</a></li>
-				  </ul>
+				  <select class="form-select">
+				  	<option>전체</option>
+				  	<option>활성</option>
+				  	<option>휴면</option>
+				  </select>
 			    </div>
 			    <div class="col-2 input-group-inline"> 
-				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" style="width: 150px;" data-bs-toggle="dropdown" aria-expanded="false">가입일</button>
-				  <ul class="dropdown-menu">
-				  	<li><a class="dropdown-item" href="#">전체</a></li>
-				  	<li><a class="dropdown-item" href="#">1주일</a></li>
-				  	<li><a class="dropdown-item" href="#">1달</a></li>
-				  	<li><a class="dropdown-item" href="#">3달</a></li>
-				  	<li><a class="dropdown-item" href="#">6달</a></li>
-				  	<li><a class="dropdown-item" href="#">1년</a></li>
-				  	<li><a class="dropdown-item" href="#">1년 이상</a></li>
-				  </ul>
+				  <select class="form-select">
+				  	<option>전체</option>
+				  	<option>1주일</option>
+				  	<option>1달</option>
+				  	<option>3달</option>
+				  	<option>6달</option>
+				  	<option>1년</option>
+				  	<option>1년 이상</option>
+				  </select>
 			    </div>
 			    <div class="col-4 input-group-inline"> 
-				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">비밀번호 변경일</button>
-				  <ul class="dropdown-menu">
-				  	<li><a class="dropdown-item" href="#">전체</a></li>
-				  	<li><a class="dropdown-item" href="#">1주일</a></li>
-				  	<li><a class="dropdown-item" href="#">1달</a></li>
-				  	<li><a class="dropdown-item" href="#">3달</a></li>
-				  	<li><a class="dropdown-item" href="#">6달</a></li>
-				  	<li><a class="dropdown-item" href="#">1년</a></li>
-				  	<li><a class="dropdown-item" href="#">1년 이상</a></li>
-				  </ul>
+				  <select class="form-select">
+				  	<option>전체</option>
+				  	<option>1주일</option>
+				  	<option>1달</option>
+				  	<option>3달</option>
+				  	<option>6달</option>
+				  	<option>1년</option>
+				  	<option>1년 이상</option>
+				  </select>
 				</div>
 			</div>
 		</div>
 		<br>
 		<div class="container">
 			<div class="row">
-				<div class="col input-group">
-				  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">검색어</button>
-				  <ul class="dropdown-menu">
-				  	<li><a class="dropdown-item" href="#">전체</a></li>
-				  	<li><a class="dropdown-item" href="#">이름</a></li>
-				  	<li><a class="dropdown-item" href="#">이메일</a></li>
-				  	<li><a class="dropdown-item" href="#">주소</a></li>
-				  </ul>
+				<div class="col- input-group">
+				  <select class="form-select">
+				  	<option>전체</option>
+				  	<option>이름</option>
+				  	<option>이메일</option>
+				  	<option>주소</option>
+				  </select>
 				  <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="검색어를 입력해주세요.">
 					<a class="btn btn-dark" href="#" role="button">
 						<i class="fa-solid fa-magnifying-glass"></i>
@@ -283,12 +277,51 @@
 			</nav>
 		</div>
 		<div class="container">
-			<button type="button" class="btn btn-warning" id="listD" onclick="listDel();"><i class="fa-solid fa-trash-can"></i> 삭제</button>
-			<button type="button" class="btn btn-danger" id="memberListD" onclick="memberListDel();"><i class="fa-solid fa-trash-can"></i> 삭제</button>
+			<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			  <i class="fa-solid fa-trash-can"></i>삭제
+			</button>
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">삭제 확인</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        선택된 항목들을 목록에서 삭제하시겠습니까?
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+			        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">삭제</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			  <i class="fa-solid fa-trash-can"></i>삭제
+			</button>
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">삭제 확인</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        선택된 항목들을 아예 삭제하시겠습니까?
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+			        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">삭제</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
 			<button type="button" class="btn btn-secondary" style="float: right;" onclick="location.href='memberRegForm.html'">회원등록</button>
 			<button type="button" class="btn btn-success" style="float: right;"><i class="fa-solid fa-file-pdf"></i> 다운</button>
 		</div>
-		<div class="container fixed-bottom">
+		<br><br><br>
+		<div class="container">
 			<p class="text-secondary" style="text-align: center;">Copyright <i class="fa-solid fa-circle-c"></i> 2022 ISML Inc. All rights reserved.</p>
 		</div>
 	</form>
@@ -319,17 +352,12 @@
 			  })
 			}
 			
-			function listDel() {
-				alert("목록에서 삭제하시겠습니까?");
-				location.href='memberListForm.html';
-				document.getElementById("listD").submit();
-			}
-			
-			function memberListDel() {
-				alert("아예 삭제하시겠습니까?");
-				location.href='memberListForm.html';
-				document.getElementById("memberListD").submit();
-			}
+			const myModal = document.getElementById('myModal')
+			const myInput = document.getElementById('myInput')
+
+			myModal.addEventListener('shown.bs.modal', () => {
+			  myInput.focus()
+			})
 	</script>
 </body>
 </html>
