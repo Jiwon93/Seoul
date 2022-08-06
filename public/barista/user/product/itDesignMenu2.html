@@ -34,281 +34,88 @@
     
     <!-- Fontawesome Stylesheet -->
     <script src="https://kit.fontawesome.com/059fbc3cf8.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		.container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-auto-rows: minmax(200px, auto);
+			grid-gap: 1rem;
+			/*justify-items: center;*/
+			/*align-items: start;*/
+			background-color: lightgray;
+		}
+		
+		.item {
+			background-color: rgba(255, 0, 0, 0.5);
+		}
+		
+		.item:nth-child(1) {
+			grid-column: 1/4;
+		}
+		
+		.item:nth-child(4) {
+			grid-column: 3;
+			grid-row: 2/4;
+		}
+		
+		.item:nth-child(5) {
+			justify-self: center;
+			align-self: center
+		}
+		
+		.item:nth-child(9) {
+			grid-column: 3;
+			grid-row: 3/5;
+		}
+		
+		.item:nth-child(odd) {
+			background-color: rgba(255, 255, 0, 0.5);
+		}
+	
+	</style>
+
 </head>
 
 <body>
+
+	<div class="container">
+		<div class="item">
+			<p>AAAAAAAA</p>
+		</div>
+		<div class="item">
+			<p>AAAAAAAAAAAAA</p>
+		</div>
+		<div class="item">
+			<p>AAAAAAAAAAAAA</p>
+		</div>
+		<div class="item">
+			<p>AAAAAAAAAAAAA</p>
+		</div>
+		<div class="item">
+			<p>AAAAAAAAAAAAA</p>
+		</div>
+		<div class="item">
+			<p>AAAAAAAAAAAAA</p>
+		</div>
+		<div class="item">
+			<p>AAAAAAAAAAAAA</p>
+		</div>
+		<div class="item">
+			<p>AAAAAAAAAAAAA</p>
+		</div>
+		<div class="item">
+			<p>AAAAAAAAAAAAA</p>
+		</div>
+	</div>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="../../index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <img src="../images/logo.png" alt="" style="width: 60px; height: 60px;">
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="./user/member/loginForm.html" class="nav-item nav-link">로그인</a>
-                <a href="./user/member/memberRegFormC.html" class="nav-item nav-link">회원가입</a>
-            </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">만렙등록</a>
-        </div>
-    </nav>
     <!-- Navbar End -->
 
-
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5">
-        <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="../images/slide2.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
-                	<div class="container">
-                    	<div class="row justify-content-center">
-                        	<div class="col-12 col-lg-8 text-center">
-                        		<i class="fa-solid fa-computer fa-4x"></i>
-								<br><label class="text-white" for="developDesign"><b>개발/디자인</b></label>
-							</div>
-						</div>
-					</div>
-				</div>
-            </div>
-        </div>
-    </div>
     <!-- Carousel End -->
     
     <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-				<ol class="breadcrumb">
-			    	<li class="breadcrumb-item"><a href="../../index.html">홈</a></li>
-			    	<li class="breadcrumb-item"><a href="#">개발/디자인</a></li>
-			    	<li class="breadcrumb-item active" aria-current="page">웹</li>
-				</ol>
-			</nav>
-		</div>
-		<div class="container">
-			<div class="sideBarMenu">
-				<ul class="nav nav-tabs">
-				  	<li class="nav-item">
-				    	<a class="nav-link active" aria-current="page" href="#">개발</a>
-				  	</li>
-				  	<li class="nav-item">
-				    	<a class="nav-link" href="#">디자인</a>
-				  	</li>
-				</ul>
-			</div>
-			<div class="row">
-            	<div class="col-3">
-            		<li class="mainContent__list">
-                		<div class="service-item">
-                    		<div class="overflow-hidden">
-                       	    	<img class="img-fluid" src="../images/laptop.jpg" alt="">
-                   			</div>
-                   			<div class="p-4 text-center border border-5 border-light border-top-0">
-                       			<h5 class="mb-3">개발/디자인</h5>
-                       			<h4 class="mb-3">웹</h4>
-                       			<a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                   			</div>
-                		</div>
-               		</li>
-               		<li class="mainContentList">
-		                <div class="service-item">
-		                    <div class="overflow-hidden">
-		                        <img class="img-fluid" src="../images/paper.jpg" alt="">
-		                    </div>
-		                    <div class="p-4 text-center border border-5 border-light border-top-0">
-		                        <h5 class="mb-3">디자인</h5>
-		                        <h4 class="mb-3">로고 브랜딩</h4>
-		                        <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-		                    </div>
-		                </div>
-	                </li>
-	                <li class="mainContentList">
-		                <div class="service-item">
-		                    <div class="overflow-hidden">
-		                        <img class="img-fluid" src="../images/shop.png" alt="">
-		                    </div>
-		                    <div class="p-4 text-center border border-5 border-light border-top-0">
-		                        <h5 class="mb-3">마케팅</h5>
-		                        <h4 class="m-3">쇼핑몰 스토어</h4>
-		                        <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-		                    </div>
-		                </div>
-	                </li>
-	                <li class="mainContentList">
-		                <div class="service-item">
-		                    <div class="overflow-hidden">
-		                        <img class="img-fluid" src="../images/ebook.jpg" alt="">
-		                    </div>
-		                    <div class="p-4 text-center border border-5 border-light border-top-0">
-		                        <h5 class="mb-3">투잡 노하우</h5>
-		                        <h4 class="m-3">투잡 재테크 전자책</h4>
-		                        <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-		                    </div>
-		                </div>
-	                </li>
-                </ul>
-             </div>
-             <div class="row">
-            	<ul class="mainContent__body">
-            		<li class="mainContent__list">
-                		<div class="service-item">
-                    		<div class="overflow-hidden">
-                       	    	<img class="img-fluid" src="../images/laptop.jpg" alt="">
-                   			</div>
-                   			<div class="p-4 text-center border border-5 border-light border-top-0">
-                       			<h5 class="mb-3">개발/디자인</h5>
-                       			<h4 class="mb-3">웹</h4>
-                       			<a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                   			</div>
-                		</div>
-               		</li>
-               		<li class="mainContentList">
-		                <div class="service-item">
-		                    <div class="overflow-hidden">
-		                        <img class="img-fluid" src="../images/paper.jpg" alt="">
-		                    </div>
-		                    <div class="p-4 text-center border border-5 border-light border-top-0">
-		                        <h5 class="mb-3">디자인</h5>
-		                        <h4 class="mb-3">로고 브랜딩</h4>
-		                        <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-		                    </div>
-		                </div>
-	                </li>
-	                <li class="mainContentList">
-		                <div class="service-item">
-		                    <div class="overflow-hidden">
-		                        <img class="img-fluid" src="../images/shop.png" alt="">
-		                    </div>
-		                    <div class="p-4 text-center border border-5 border-light border-top-0">
-		                        <h5 class="mb-3">마케팅</h5>
-		                        <h4 class="m-3">쇼핑몰 스토어</h4>
-		                        <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-		                    </div>
-		                </div>
-	                </li>
-	                <li class="mainContentList">
-		                <div class="service-item">
-		                    <div class="overflow-hidden">
-		                        <img class="img-fluid" src="../images/ebook.jpg" alt="">
-		                    </div>
-		                    <div class="p-4 text-center border border-5 border-light border-top-0">
-		                        <h5 class="mb-3">투잡 노하우</h5>
-		                        <h4 class="m-3">투잡 재테크 전자책</h4>
-		                        <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-		                    </div>
-		                </div>
-	                </li>
-                </ul>
-             </div>
-             <div class="row">
-            	<ul class="mainContent__body">
-            		<li class="mainContent__list">
-                		<div class="service-item">
-                    		<div class="overflow-hidden">
-                       	    	<img class="img-fluid" src="../images/laptop.jpg" alt="">
-                   			</div>
-                   			<div class="p-4 text-center border border-5 border-light border-top-0">
-                       			<h5 class="mb-3">개발/디자인</h5>
-                       			<h4 class="mb-3">웹</h4>
-                       			<a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                   			</div>
-                		</div>
-               		</li>
-               		<li class="mainContentList">
-		                <div class="service-item">
-		                    <div class="overflow-hidden">
-		                        <img class="img-fluid" src="../images/paper.jpg" alt="">
-		                    </div>
-		                    <div class="p-4 text-center border border-5 border-light border-top-0">
-		                        <h5 class="mb-3">디자인</h5>
-		                        <h4 class="mb-3">로고 브랜딩</h4>
-		                        <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-		                    </div>
-		                </div>
-	                </li>
-	                <li class="mainContentList">
-		                <div class="service-item">
-		                    <div class="overflow-hidden">
-		                        <img class="img-fluid" src="../images/shop.png" alt="">
-		                    </div>
-		                    <div class="p-4 text-center border border-5 border-light border-top-0">
-		                        <h5 class="mb-3">마케팅</h5>
-		                        <h4 class="m-3">쇼핑몰 스토어</h4>
-		                        <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-		                    </div>
-		                </div>
-	                </li>
-	                <li class="mainContentList">
-		                <div class="service-item">
-		                    <div class="overflow-hidden">
-		                        <img class="img-fluid" src="../images/ebook.jpg" alt="">
-		                    </div>
-		                    <div class="p-4 text-center border border-5 border-light border-top-0">
-		                        <h5 class="mb-3">투잡 노하우</h5>
-		                        <h4 class="m-3">투잡 재테크 전자책</h4>
-		                        <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-		                    </div>
-		                </div>
-	                </li>
-                </ul>
-             </div>
-             <div class="row">
-            	<ul class="mainContent__body">
-            		<li class="mainContent__list">
-                		<div class="service-item">
-                    		<div class="overflow-hidden">
-                       	    	<img class="img-fluid" src="../images/laptop.jpg" alt="">
-                   			</div>
-                   			<div class="p-4 text-center border border-5 border-light border-top-0">
-                       			<h5 class="mb-3">개발/디자인</h5>
-                       			<h4 class="mb-3">웹</h4>
-                       			<a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                   			</div>
-                		</div>
-               		</li>
-               		<li class="mainContentList">
-		                <div class="service-item">
-		                    <div class="overflow-hidden">
-		                        <img class="img-fluid" src="../images/paper.jpg" alt="">
-		                    </div>
-		                    <div class="p-4 text-center border border-5 border-light border-top-0">
-		                        <h5 class="mb-3">디자인</h5>
-		                        <h4 class="mb-3">로고 브랜딩</h4>
-		                        <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-		                    </div>
-		                </div>
-	                </li>
-	                <li class="mainContentList">
-		                <div class="service-item">
-		                    <div class="overflow-hidden">
-		                        <img class="img-fluid" src="../images/shop.png" alt="">
-		                    </div>
-		                    <div class="p-4 text-center border border-5 border-light border-top-0">
-		                        <h5 class="mb-3">마케팅</h5>
-		                        <h4 class="m-3">쇼핑몰 스토어</h4>
-		                        <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-		                    </div>
-		                </div>
-	                </li>
-	                <li class="mainContentList">
-		                <div class="service-item">
-		                    <div class="overflow-hidden">
-		                        <img class="img-fluid" src="../images/ebook.jpg" alt="">
-		                    </div>
-		                    <div class="p-4 text-center border border-5 border-light border-top-0">
-		                        <h5 class="mb-3">투잡 노하우</h5>
-		                        <h4 class="m-3">투잡 재테크 전자책</h4>
-		                        <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-		                    </div>
-		                </div>
-	                </li>
-                </ul>
-             </div>
-        </div>
-    </div>
     <!-- Service End -->
+
     <!-- Projects Start -->
     <!-- Projects End -->
 
@@ -316,110 +123,6 @@
     <!-- Testimonial End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 pt-5">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="text-light mb-4">문의</h5>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>1599-9999</p>
-                    <p class="mb-2">10:00 ~ 18:00(점심시간 13:00 ~ 14:00)</p>
-                    <p class="mb-2">주말, 공휴일 휴무</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <a href="" class="btn btn-primary py-3 px-5 me-3">1:1문의</a>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="text-light mb-4">인생만렙</h5>
-                    <a class="btn btn-link" href="">회사소개</a>
-                    <a class="btn btn-link" href="">채용안내</a>
-                    <a class="btn btn-link" href="">서비스소개</a>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="text-light mb-4">만렙안내</h5>
-                    <a class="btn btn-link" href="">이용안내</a>
-                    <a class="btn btn-link" href="">만렙가이드</a>
-                    <a class="btn btn-link" href="">만렙등록</a>
-                    <a class="btn btn-link" href="">만렙센터</a>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="text-light mb-4">고객안내</h5>
-                    <a class="btn btn-link" href="">이용안내</a>
-                    <a class="btn btn-link" href="">안전정책</a>
-                    <a class="btn btn-link" href="">예상금액</a>
-                    <a class="btn btn-link" href="">인생만렙보증</a>
-                    <a class="btn btn-link" href="">인생만렙찾기</a>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="text-light mb-4">고객센터</h5>
-                    <a class="btn btn-link" href="">공지사항</a>
-                    <a class="btn btn-link" href="">자주묻는질문</a>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-        	<div class="row py-3">
-        		<div class="col text-center">
-        			이용약관
-        		</div>
-        		<div class="col text-center">
-        			개인정보처리방침
-        		</div>
-        		<div class="col text-center">
-        			사업자 정보확인
-        		</div>
-        	</div>
-        	<div class="row">
-        		<div class="col text-center">
-        			<p class="m-1">
-        				(주)인생만렙은 통신판매중개자로서 통신판매의 당사자가 아니면 개별 판매자가 제공하는 서비스에 대한 이행, 
-        				계약사항 등과 관련한 의무와 책임은 거래당사자에게 있습니다.
-        			</p>
-        		</div>
-        	</div>
-        </div>
-        <div class="container">
-        	<div class="row">
-        		<div class="col text-center">
-        			<p class="m-1">
-        				상호명: (주)인생만렙 대표이사: 신지원 개인정보책임관리자: 신지원 주소: 서울특별시 서초구 서초대로77길 55,에이프로스퀘어 3층
-        			</p>
-        		</div>
-        	</div>
-        	<div class="row">
-        		<div class="col text-center">
-        			<p class="m-1">
-        				사업자등록번호: 000-00-00000 통신판매업신고증: 제 2022-서울강남-00000호 직업정보제공사업 신고번호: 서울청 제 2022-00호
-        			</p>
-        		</div>
-        	</div>
-        	<div class="row">
-        		<div class="col text-center">
-        			<p class="m-1">
-        				고객센터: 1599-9999 이메일: support@insaengmanlab.com
-        			</p>
-        		</div>
-        	</div>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col text-center">
-                        Copyright &copy; 2022&nbsp;<a class="border-bottom" href="#">ISML</a>&nbsp;lnc, All Right Reserved.
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col text-center">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Footer End -->
 
 
