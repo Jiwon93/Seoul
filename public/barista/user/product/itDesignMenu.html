@@ -34,6 +34,20 @@
     
     <!-- Fontawesome Stylesheet -->
     <script src="https://kit.fontawesome.com/059fbc3cf8.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+    	.nav-tabs{
+    		font-size: x-large;
+    	}
+    	
+    	.sideMenu{
+    		list-style: none;
+    		padding: 0px;
+    	}
+		
+		.sideMenu > li{
+			padding-top: 20px;
+		}
+    </style>
 </head>
 
 <body>
@@ -91,12 +105,58 @@
 			<div class="col-2">
 				<ul class="nav nav-tabs">
 				  	<li class="nav-item">
-				    	<a class="nav-link active" aria-current="page" href="#">개발</a>
+				    	<a class="nav-link active" data-toggle="tab" href="#developM">개발</a>
 				  	</li>
 				  	<li class="nav-item">
-				    	<a class="nav-link" href="#">디자인</a>
+				    	<a class="nav-link" data-toggle="tab" href="#designM">디자인</a>
 				  	</li>
 				</ul>
+				<div class="tab-content">
+					<div class="tab-pane fade show active" id="developM">
+						<ul class="sideMenu">
+							<li>
+								<a class="active" href="#">웹</a>
+							</li>
+							<li>
+								<a class="" href="#">모바일 앱</a>
+							</li>
+							<li>
+								<a class="" href="#">프로그램</a>
+							</li>
+							<li>
+								<a class="" href="#">쇼핑몰 커머스</a>
+							</li>
+							<li>
+								<a class="" href="#">데이터</a>
+							</li>
+							<li>
+								<a class="" href="#">보안</a>
+							</li>
+						</ul>
+					</div>
+					<div class="tab-pane fade" id="designM">
+						<ul>
+							<li>
+								<a class="" href="#">로고 브랜딩</a>
+							</li>
+							<li>
+								<a class="" href="#">상세 이벤트 페이지</a>
+							</li>
+							<li>
+								<a class="" href="#">명함 인쇄 홍보물</a>
+							</li>
+							<li>
+								<a class="" href="#">웹 모바일 디자인</a>
+							</li>
+							<li>
+								<a class="" href="#">일러스트 캐리커쳐</a>
+							</li>
+							<li>
+								<a class="" href="#">웹툰 캐릭터 이모티콘</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div class="container">
 	           	<div class="row p-4">
