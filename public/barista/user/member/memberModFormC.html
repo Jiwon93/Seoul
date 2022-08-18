@@ -33,6 +33,15 @@
     
     <!-- Fontawesome Stylesheet -->
     <script src="https://kit.fontawesome.com/059fbc3cf8.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+    	label {
+    		font-weight: bold;
+    	}
+    	
+    	.input-group {
+    		border-spacing: lightgray;
+    	}
+    </style>
 </head>
 
 <body>
@@ -60,100 +69,102 @@
     </nav>
     <!-- Navbar End -->
     <!-- Contact Start -->
-    <div class="container-fluid bg-light overflow-hidden" style="margin: 1rem 0;">
+    <div class="container-fluid overflow-hidden" style="margin: 1rem 0;">
         <div class="container contract">
            <div class="col-6 contact-text py-2 offset-3">
                <div class="p-lg-5">
                    <div class="">
-                       <h5 class="display-6 mb-4">계정설정</h5>
+                       <h4 class="mb-4">계정설정</h4>
                    </div>
-                   <div class="row g-3">
-                       <div class="col-8 offset-2">
-                       	   <label class="form-label" for="emailReg">이메일</label>	
-                           <div class="input-group">
-                               <input type="email" class="form-control" id="emailReg" placeholder="이메일을 입력해 주세요.">
-                           </div>
-                       </div>
-                       <div class="col-8 offset-2">
-                       	   <label class="form-label" for="passwordReg">비밀번호</label>
-                           <div class="input-group">
-                               <input type="password" class="form-control" id="passwordReg" placeholder="비밀번호를 입력해 주세요.">
-                           </div>
-                           <div class="input-group">
-                               <input type="password" class="form-control" id="passwordReg" placeholder="동일하게 한번 더 입력해 주세요.">
-                           </div>
-                       </div>
-                       <div class="col-8 offset-2">
-                       	   <label class="form-label" for="bodReg">생년월일</label>	
-                           <div class="input-group">
-                               <input type="text" class="form-control" id="bodReg" placeholder="8글자로 입력해 주세요.(ex. YYYYMMDD)" maxlength="8">
-                           </div>
-                       </div>
-                       <div class="col-8 offset-2">
-                       	   <label class="form-label" for="phoneReg">핸드폰</label>	
-                           <div class="input-group">
-                               <input type="text" class="form-control" id="phoneReg" placeholder="(-)를 제외한 11글자로 입력해 주세요." maxlength="11">
-                           </div>
-                       </div>
-                       <div class="col-8 offset-2">
-                       	   <label class="form-label" for="genderReg">성별</label>	
-                           <br>
-                           <div class="form-check form-check-inline">
-                               <input type="radio" class="form-check-input" name="gender" id="genderRegM">
-                               <label class="form-check-label" for="genderRegM">남자</label>
-                           </div>
-                           <div class="form-check form-check-inline">
-                               <input type="radio" class="form-check-input" name="gender" id="genderRegW">
-                               <label class="form-check-label" for="genderRegW">여자</label>
-                           </div>
-                       </div>
-                       <div class="col-8 offset-2">
-                       	   <label class="form-label" for="addressReg">주소</label>
-                       	   <div class="input-group">
-                       	   	   <button class="btn btn-primary" type="submit">주소검색</button>
-                               <input type="text" class="form-control" id="addressReg" placeholder="우편번호">
-                           </div>
-                           <div class="input-group">
-                               <input type="text" class="form-control" id="addressReg" placeholder="주소를 입력해 주세요.">
-                           </div>
-                           <div class="input-group">
-                               <input type="text" class="form-control" id="addressReg" placeholder="상세주소를 입력해 주세요.">
-                           </div>
-                       </div>
-                       <div class="col-8 offset-2">
-                       	   <label class="form-label" for="jobReg">직업</label>
-                       	   <div class="input-group">
-		                       <select class="form-select" id="jobReg">
-								   <option selected>직업선택</option>
-								   <option value="j1">직장인</option>
-								   <option value="j2">프리랜서</option>
-								   <option value="j3">소상공인</option>
-								   <option value="j4">스타트업 창업자</option>
-								   <option value="j5">대학(원)생</option>
-								   <option value="j6">취업준비생</option>
-						   	   </select>
-			   		   	   </div>
-		  			   </div>
-					   <div class="col-8 offset-2">
-			                       	   <label class="form-label" for="favoriteReg">관심선택(중복 선택 가능)</label>
-			                       	   <div class="input-group">
-			                         <select class="form-select" id="favoriteReg" multiple>
-								   <option selected>디자인</option>
-								   <option value="f1">IT 프로그래밍</option>
-								   <option value="f2">영상 사진 음향</option>
-								   <option value="f3">마케팅</option>
-								   <option value="f4">번역 통역</option>
-								   <option value="f5">문서 글쓰기</option>
-								   <option value="f6">건강 미용</option>
-								   <option value="f7">비즈니스 컨설팅</option>
-								   <option value="f8">심리상담</option>
-								   <option value="f9">주문제작</option>
-								   <option value="f10">세무 법무 노무</option>
-								   <option value="f11">이벤트</option>
-								   <option value="f12">레슨</option>
-							   </select>
+                   <div class="p-4 border border-2 border-light">
+	                   <div class="row g-3">
+	                       <div class="col-8 offset-2">
+	                       	   <label class="form-label" for="emailReg">이메일</label>	
+	                           <div class="input-group">
+	                               <input type="email" class="form-control" id="emailReg" placeholder="이메일을 입력해 주세요.">
+	                           </div>
+	                       </div>
+	                       <div class="col-8 offset-2">
+	                       	   <label class="form-label" for="passwordReg">비밀번호</label>
+	                           <div class="input-group">
+	                               <input type="password" class="form-control" id="passwordReg" placeholder="비밀번호를 입력해 주세요.">
+	                           </div>
+	                           <div class="input-group">
+	                               <input type="password" class="form-control" id="passwordReg" placeholder="동일하게 한번 더 입력해 주세요.">
+	                           </div>
+	                       </div>
+	                       <div class="col-8 offset-2">
+	                       	   <label class="form-label" for="bodReg">생년월일</label>	
+	                           <div class="input-group">
+	                               <input type="text" class="form-control" id="bodReg" placeholder="8글자로 입력해 주세요.(ex. YYYYMMDD)" maxlength="8">
+	                           </div>
+	                       </div>
+	                       <div class="col-8 offset-2">
+	                       	   <label class="form-label" for="phoneReg">핸드폰</label>	
+	                           <div class="input-group">
+	                               <input type="text" class="form-control" id="phoneReg" placeholder="(-)를 제외한 11글자로 입력해 주세요." maxlength="11">
+	                           </div>
+	                       </div>
+	                       <div class="col-8 offset-2">
+	                       	   <label class="form-label" for="genderReg">성별</label>	
+	                           <br>
+	                           <div class="form-check form-check-inline">
+	                               <input type="radio" class="form-check-input" name="gender" id="genderRegM" checked>
+	                               <label class="form-check-label" for="genderRegM">남자</label>
+	                           </div>
+	                           <div class="form-check form-check-inline">
+	                               <input type="radio" class="form-check-input" name="gender" id="genderRegW">
+	                               <label class="form-check-label" for="genderRegW">여자</label>
+	                           </div>
+	                       </div>
+	                       <div class="col-8 offset-2">
+	                       	   <label class="form-label" for="addressReg">주소</label>
+	                       	   <div class="input-group">
+	                       	   	   <button class="btn btn-primary" type="submit">주소검색</button>
+	                               <input type="text" class="form-control" id="addressReg" placeholder="우편번호">
+	                           </div>
+	                           <div class="input-group">
+	                               <input type="text" class="form-control" id="addressReg" placeholder="주소를 입력해 주세요.">
+	                           </div>
+	                           <div class="input-group">
+	                               <input type="text" class="form-control" id="addressReg" placeholder="상세주소를 입력해 주세요.">
+	                           </div>
+	                       </div>
+	                       <div class="col-8 offset-2">
+	                       	   <label class="form-label" for="jobReg">직업</label>
+	                       	   <div class="input-group">
+			                       <select class="form-select" id="jobReg">
+									   <option value="j0">직업선택</option>
+									   <option value="j1" selected>직장인</option>
+									   <option value="j2">프리랜서</option>
+									   <option value="j3">소상공인</option>
+									   <option value="j4">스타트업 창업자</option>
+									   <option value="j5">대학(원)생</option>
+									   <option value="j6">취업준비생</option>
+							   	   </select>
+				   		   	   </div>
+			  			   </div>
+						   <div class="col-8 offset-2">
+				                       	   <label class="form-label" for="favoriteReg">관심선택(중복 선택 가능)</label>
+				                       	   <div class="input-group">
+				                         <select class="form-select" id="favoriteReg">
+									   <option value="f0">디자인</option>
+									   <option value="f1" selected>IT 프로그래밍</option>
+									   <option value="f2">영상 사진 음향</option>
+									   <option value="f3">마케팅</option>
+									   <option value="f4">번역 통역</option>
+									   <option value="f5">문서 글쓰기</option>
+									   <option value="f6">건강 미용</option>
+									   <option value="f7">비즈니스 컨설팅</option>
+									   <option value="f8">심리상담</option>
+									   <option value="f9">주문제작</option>
+									   <option value="f10">세무 법무 노무</option>
+									   <option value="f11">이벤트</option>
+									   <option value="f12">레슨</option>
+								   </select>
+							   </div>
 						   </div>
-					   </div>
+	                   </div>
                    </div>
                </div>
            </div>
