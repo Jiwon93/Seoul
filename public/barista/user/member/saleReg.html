@@ -31,27 +31,47 @@
     <!-- Template Stylesheet -->
     <link href="../../template/woody/css/style.css" rel="stylesheet">
     
-    
     <!-- Fontawesome Stylesheet -->
     <script src="https://kit.fontawesome.com/059fbc3cf8.js" crossorigin="anonymous"></script>
     <style type="text/css">
-    	.image {
-    		float: left;
+    	label {
+    		font-weight: bold;
     	}
     	
-    	.explain {
-    		clear: both;
+    	.input-group {
+    		border-radius: 5px;
     	}
     	
-    	th {
+    	.confirm {
+    		background-color: white;
+    		border-radius: 8px;
+    		height: 25px;
+    		width: 60px;
+    		font-size: 0.7em;
     		text-align: center;
-    		border-bottom: 2px solid lightgray;
-    		color: darkgray;
+    		padding: 4px 3px 3px 3px;
     	}
     	
-    	td {
-    		height: 40px;
-    		width: 200px;
+    	.btn {
+    		border-radius: 5px;
+    	}
+    	
+    	.mypageC {
+    		list-style: none;
+    		margin: 0px;
+    		padding: 0px;
+    	}
+    	
+    	.mypageList {
+    		height: 45px;
+    	}
+    	
+    	.saleRegF {
+    		border: 2px dashed darkgray;
+    		text-align: center;
+    		vertical-align: middle;
+    		height: 250px;
+    		line-height: 250px;
     	}
     </style>
 </head>
@@ -59,186 +79,76 @@
 <body>
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="../../index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src="../images/logo.png" alt="" style="width: 60px; height: 60px;">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        	<form class="d-flex" role="search">
+		        <input class="form-control me-2" type="search" style="width: 400px;" placeholder="Search" aria-label="Search">
+		        <button class="btn btn-outline-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+		    </form>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="loginForm.html" class="nav-item nav-link"><i class="fa-solid fa-comment fa-2x"></i></a>
+                <a href="memberRegFormC.html" class="nav-item nav-link"><i class="fa-solid fa-bell fa-2x"></i></a>
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user fa-2x"></i></a>
+                <ul class="dropdown-menu">
+		            <li><a class="dropdown-item" href="memberViewB.html">마이페이지</a></li>
+		            <li><a class="dropdown-item" href="saleManage.html">판매 관리</a></li>
+		            <li><a class="dropdown-item" href="memberViewB.html">계정 설정</a></li>
+		            <li><hr class="dropdown-divider"></li>
+		            <li><a class="dropdown-item" href="index.html">로그 아웃</a></li>
+		        </ul>
+            </div>
+        </div>
     </nav>
     <!-- Navbar End -->
-
-
-    <!-- Carousel Start -->
-    <!-- Carousel End -->
-    
-    <!-- Service Start -->
-    <div class="container-fluid py-4">
-		<div class="container-fluid py-5">
-			<div class="container">
-				<h4 class="pb-4">결제하기</h4>
-       			<div class="p-4 border border-2 border-light border-bottom-0">
-           			<h5 class="mb-3">주문내역</h5>
-           			<div class="col-sm-12 pb-5">
-           				<table>
-           					<tr>
-           						<td rowspan="4">
-           							<img alt="" src="../images/main.jpg" style="width: 250px; height: 170px;">
-       							</td>
-           						<td class="px-5">
-	           						<h5 style="font-size: 1.1em;">00홈페이지</h5>
-           						</td>
-           					</tr>
-           					<tr>
-           						<!-- <td></td> -->
-           						<td class="px-5" style="width: 500px;">
-           							<p>최신 테마 반응형 홈페이지를 제작해 드립니다.</p>
-           						</td>
-           					</tr>
-           					<tr>
-           						<!-- <td></td> -->
-           						<td></td>
-           					</tr>
-           					<tr>
-           						<!-- <td></td> -->
-           						<td></td>
-           					</tr>
-           				</table>
-           			</div>
-           			<div class="col-sm-12 pb-5">
-           				<table>
-           					<tr>
-           						<th style="text-align: left;">기본항목</th>
-           						<th>수량</th>
-           						<th>작업일</th>
-           						<th style="text-align: right;">가격</th>
-           					</tr>
-           					<tr>
-           						<td>[00홈페이지] 프로페셔널형</td>
-           						<td style="text-align: center;">
-           							<a href="#"><i class="fa-solid fa-square-minus"></i></a>
-									<span>1</span>
-           							<a href="#"><i class="fa-solid fa-square-plus"></i></a>
-       							</td>
-           						<td style="text-align: center;">10일</td>
-           						<td style="text-align: right;">10,000,000원</td>
-           					</tr>
-           				</table>
-           			</div>
-           			<div class="col-sm-12">
-           				<table>
-           					<tr>
-           						<td>
-           							<i class="fa-solid fa-check"></i>
-           							<span>반응형 웹</span>
-           						</td>
-           						<td>
-           							<i class="fa-solid fa-check"></i>
-           							<span>소스 코드 제공</span>
-           						</td>
-           					</tr>
-           					<tr>
-           						<td>
-           							<i class="fa-solid fa-check"></i>
-           							<span>맞춤 디자인 제공</span>
-           						</td>
-           						<td>
-           							<i class="fa-solid fa-check"></i>
-           							<span>기능 추가 1개</span>
-           						</td>
-           					</tr>
-           					<tr>
-           						<td>
-           							<i class="fa-solid fa-check"></i>
-           							<span>10페이지</span>
-           						</td>
-           						<td>
-           							<i class="fa-solid fa-check"></i>
-           							<span>수정 2회</span>
-           						</td>
-           					</tr>
-           				</table>
-           			</div>
-       			</div>
-       			<div class="p-4 border border-2 border-light border-bottom-0">
-           			<h5 class="mb-3">할인 / 캐시사용</h5>
-           			<div class="input-group row mb-3">
-            			<label for="selectCoupon" class="col-sm-2 col-form-label" >사용 가능한 쿠폰</label>
-            			<div class="col-sm-5">
-             				<select class="form-select" id="selectCoupon">
-             					<option selected>쿠폰선택</option>
-             				</select>
-            			</div>
-           			</div>
-       				<div class="input-group row mb-3">
-           				<label for="useCash" class="col-sm-2 col-form-label">캐시 사용</label>
-            			<div class="col-sm-3">
-             				<input type="text" class="form-control" id="useCash" placeholder="0원">
-            			</div>
-            			<button class="col-sm-1 btn btn-primary" style="background-color: white; color: #AB7442;">전액사용</button>
-           			</div>
-       			</div>
-       			<div class="p-4 border border-2 border-light border-bottom-0">
-           			<h5 class="mb-3">결제방법</h5>
-           			<div class="form-check form-check-inline">
-                        <input type="radio" class="form-check-input" name="creditCard" id="creditCardP">
-                        <label class="form-check-label" for="creditCardP">신용카드</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input type="radio" class="form-check-input" name="" id="">
-                        <label class="form-check-label" for="">실시간 계좌이체</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input type="radio" class="form-check-input" name="" id="">
-                        <label class="form-check-label" for="">무통장입금</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input type="radio" class="form-check-input" name="" id="">
-                        <label class="form-check-label" for="">휴대폰</label>
-                    </div>
-       			</div>
-       			<div class="p-4 border border-2 border-light border-bottom-0">
-           			<h5 class="mb-3" style="display: inline;">세금계산서 발행신청</h5>
-           			<input type="checkbox" class="form-check-input" name="" id="">
-       			</div>
-       			<div class="p-4 border border-2 border-light">
-       				<h5 class="mb-3">최종확인</h5>
-       				<div class="col-sm-12">
-       					총 상품 금액
-       				</div>
-       				<div class="col-sm-12">
-       					쿠폰 할인
-       				</div>
-       				<div class="col-sm-12">
-       					캐시 사용
-       				</div>
-       				<hr>
-       				<div class="col-sm-12">
-		       			총 결제 금액		
-       				</div>
-       				<div class="col-sm-12">
-	           			<input type="checkbox" class="form-check-input" name="" id="">
-	           			<label class="form-chech-label col-sm-4" for="">
-	           				주문 내용을 확인하였으며, 결제에 동의합니다.(필수)
-	           			</label>
-           			</div>
-           			<div class="col-sm-12">
-           				<button class="btn btn-primary col-sm-4">결제하기</button>
-           			</div>
-           			<div class="col-sm-12">
-           				<p style="font-size: small;">상품 제공 완료 후 만렙에게 결제 대금이 전달됩니다.</p>
-           			</div>
-       			</div>
-	        </div>
-        </div>
+    <!-- Contact Start -->
+    <div class="container-fluid overflow-hidden" style="margin: 1rem 0;">
+           <div class="row">
+	           <div class="col-sm-3 p-lg-5">
+	           		<div class="text-center pb-4">
+						<img src="../images/men.png" class="border border-3 rounded-circle" style="height: 40%; width: 40%;" alt="">
+					</div>
+					<div class="text-center pb-4">
+						<button class="btn btn-primary" style="width: 60px; font-size: small;">만렙</button>
+						<span class="px-3">jiwon123</span>
+					</div>
+					<div class="text-center pb-5">
+						<button class="btn btn-secondary" style="width: 200px;" onclick="location.href='memberViewC.html'">일반으로 전환</button>
+					</div>
+					<div class="pt-4">
+						<h4 class="" style="border-bottom: 2px solid #AB7442;">마이페이지</h4>
+						<ul class="mypageC">
+				            <li class="mypageList pt-3 pb-5"><a class="" href="saleManage.html">판매 관리</a></li>
+				            <li class="mypageList"><a class="" href="#">판매 등록</a></li>
+				            <li class="mypageList"><a class="" href="#">수익 관리</a></li>
+				            <li class="mypageList"><a class="" href="#">광고 신청</a></li>
+				            <li class="mypageList"><a class="" href="#">나의 만렙 등급</a></li>
+				            <li class="mypageList"><a class="" href="#">문의 관리</a></li>
+				            <li class="mypageList"><a class="" href="memberViewB.html">계정 설정</a></li>
+				            <li class="mypageList"><a class="" href="pwChangeFormB.html">비밀번호 변경</a></li>
+				            <li class="mypageList"><a class="" href="#">계정 탈퇴</a></li>
+				        </ul>					
+					</div>
+	           </div>
+	           <div class="col-sm-9 p-2">
+	               <div class="p-lg-5">
+	                   <div class="">
+	                       <h4 class="mb-4">판매등록</h4>
+	                   </div>
+	                   <div class="saleRegF">
+	                   	   <a class="" id="saleRegL" href="saleRegForm.html"><i class="fa-solid fa-plus fa-3x"></i></a>
+	                   	   <label class="form-label" for="saleRegL">판매 등록하기</label>
+	                   </div>
+	               </div>
+	           </div>
+           </div>
     </div>
-    <!-- Service End -->
-    <!-- Projects Start -->
-    <!-- Projects End -->
-
-    <!-- Testimonial Start -->
-    <!-- Testimonial End -->
-
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer mt-5 pt-5">
         <div class="container py-5">
