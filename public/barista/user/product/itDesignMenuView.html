@@ -54,6 +54,14 @@
 			text-align: center;
 			height: 80px;
 		}
+		
+		.btn{
+			border-radius: 5px;
+		}
+		
+		.listCheck {
+			justify-content: flex-end;
+		}
 	</style>
 
 </head>
@@ -238,9 +246,9 @@
 	       						</tr>
 	       						<tr>
 	       							<td></td>
-	       							<td><button class="btn btn-primary">구매</button></td>
-	       							<td><button class="btn btn-primary">구매</button></td>
-	       							<td><button class="btn btn-primary">구매</button></td>
+	       							<td><button class="btn btn-primary w-100">구매</button></td>
+	       							<td><button class="btn btn-primary w-100">구매</button></td>
+	       							<td><button class="btn btn-primary w-100">구매</button></td>
 	       						</tr>
 	       						
 	       					</table>
@@ -299,42 +307,74 @@
 	        			<h5>최신 테마 반응형 홈페이지를 제작해 드립니다.</h5>
 	        		</div>
 		        	<div class="row">
-		        		<ul class="nav nav-tabs">
-							<li class="nav-item">
-						    	<a class="nav-link" href="#">BASIC</a>
-							</li>
-							<li class="nav-item">
-						    	<a class="nav-link" href="#">BEST</a>
-							</li>
-							<li class="nav-item">
-						    	<a class="nav-link disabled">PROFESSIONAL</a>
-							</li>
-						</ul>
-		       			<table>
-		       				<tr>
-		       					<td>550,000원 Basic</td>
-		       				</tr>
-		       				<tr>
-		       					<td>750,000원 Best</td>
-		       				</tr>
-		       				<tr>
-		       					<td>1,320,000원 Professional</td>
-		       				</tr>
-		       				<tr>
-		       					<td>
-		       						<b>[00홈페이지] 프로페셔널형</b><br>
-		       						최신 반응형 홈페이지 제작<br>
-		       						고퀄리티 홈페이지 테마제공<br>
-		       						다양한 게시판 스킨폼 제공<br>
-		       						반응형 팝업, 회원관리자 제공
-		       					</td>
-		       				</tr>
-		       				<tr>
-		       					<td></td>
-		       				</tr>
-		       			</table>
+		        		<div class="container-fluid">
+			        		<ul class="nav nav-tabs">
+								<li class="nav-item">
+							    	<a class="nav-link active" data-toggle="tab" href="#basicDetail"><h5>BASIC</h5></a>
+								</li>
+								<li class="nav-item">
+							    	<a class="nav-link" data-toggle="tab" href="#bestDetail"><h5>BEST</h5></a>
+								</li>
+								<li class="nav-item">
+							    	<a class="nav-link" data-toggle="tab" href="#proDetail"><h5>PROFESSIONAL</h5></a>
+								</li>
+							</ul>
+							<div class="tab-content">
+							     <div class="tab-pane fade show active" id="basicDetail">
+							     	<div>
+							     		<span>550,000원</span>
+							     		<Span>(VAT 포함가)</Span>	
+							     	</div>
+							     	<div>
+							     		<span>[케이홈페이지] 홈페이지제작베이직형</span>
+							     		<p>
+							     			최신 반응형홈페이지 제작<br>
+							     			고퀄리티 홈페이지 테마제공<br>
+							     			반응형팝업, 회원관리, 관리자페이지 등
+							     		</p>
+							     	</div>
+							     	<div>
+							     		<div>
+						     				<span>반응형 웹</span>
+						     				<span class="listCheck"><i class="fa-solid fa-check"></i></span>
+					     				</div>
+					     				<div>
+						     				<span>소스 코드 제공</span>
+						     				<span class="listCheck"><i class="fa-solid fa-check"></i></span>
+					     				</div>
+					     				<div>
+						     				<span>맞춤 디자인 제공</span>
+						     				<span class="listCheck"><i class="fa-solid fa-dash"></i></span>
+					     				</div>
+					     				<div>
+						     				<span>기능 추가</span>
+						     				<span class="listCheck">1개</span>
+					     				</div>
+					     				<div>
+						     				<span>페이지 수</span>
+						     				<span class="listCheck">5페이지</span>
+					     				</div>
+					     				<div>
+						     				<span>작업일</span>
+						     				<span class="listCheck">10일</span>
+					     				</div>
+					     				<div>
+						     				<span>수정 횟수</span>
+						     				<span class="listCheck">2회</span>
+					     				</div>
+							     	</div>
+							     	<div>
+							     		<button class="btn btn-primary w-100">구매하기</button>
+							     	</div>
+							     </div>
+							     <div class="tab-pane fade" id="bestDetail">
+							     </div>
+							     <div class="tab-pane fade" id="proDetail">
+							     </div>
+							</div>
+						</div>
 	       			</div>
-	       			<div class="row">
+	       			<div class="row mt-5">
 		       			<table>
 		       				<tr>
 		       					<th style="text-align: left;">상품문의(00홈페이지)</th>
@@ -358,7 +398,7 @@
 		       				</tr>
 		       				<tr>
 		       					<td>
-		       						<a class="btn btn-outline-primary" href="#">문의하기</a>
+		       						<a class="btn btn-outline-primary w-100" href="#">문의하기</a>
 		       					</td>
 		       				</tr>
 		       			</table>
@@ -502,6 +542,9 @@
 
     <!-- Template Javascript -->
     <script src="../../template/woody/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 
 </html>
