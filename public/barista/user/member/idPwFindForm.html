@@ -30,6 +30,9 @@
 
     <!-- Template Stylesheet -->
     <link href="../../template/woody/css/style.css" rel="stylesheet">
+    
+    <!-- Fontawesome Stylesheet -->
+    <script src="https://kit.fontawesome.com/059fbc3cf8.js" crossorigin="anonymous"></script>
 	<style type="text/css">
 		.row {
 			flex-wrap: nowrap;
@@ -109,8 +112,22 @@
                </div>
                <div class="row mb-4">
                    <div class="col">
-                       <button class="btn btn-primary w-100 py-2" type="submit">이메일 주소 전송</button>
+                       <button class="btn btn-primary w-100 py-2" type="button" data-bs-toggle="modal" data-bs-target="#emailAddress">이메일 주소 전송</button>
                    </div>
+                   <div class="modal fade" id="emailAddress" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				   	   <div class="modal-dialog modal-dialog-centered">
+					       <div class="modal-content ">
+					       	   <div class="modal-head text-end mt-3">
+					       	   	   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					       	   </div>
+						       <div class="modal-body text-center">
+						      	   <i class="fa-solid fa-circle-check fa-4x" style="color: #2ECC71;"></i>
+						           <h5 class="modal-title mt-2" id="exampleModalLabel">전송완료</h5>
+						           <p class="mt-5 mb-3">SMS로 가입하신 이메일 주소를 발송하였습니다.</p>
+						       </div>
+					       </div>
+				   	   </div>
+				   </div>
                </div>
            </div>
         </div>
@@ -136,10 +153,23 @@
                </div>
                <div class="row mb-4">
                    <div class="col">
-                       <button class="btn btn-primary w-100" type="submit">비밀번호 재설정 URL 전송</button>
+                       <button class="btn btn-primary w-100" type="button" data-bs-toggle="modal" data-bs-target="#pwreUrl">비밀번호 재설정 URL 전송</button>
                    </div>
+                   <div class="modal fade" id="pwreUrl" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				   	   <div class="modal-dialog modal-dialog-centered">
+					       <div class="modal-content ">
+					       	   <div class="modal-head text-end mt-3">
+					       	   	   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					       	   </div>
+						       <div class="modal-body text-center">
+						      	   <i class="fa-solid fa-circle-check fa-4x" style="color: #2ECC71;"></i>
+						           <h5 class="modal-title mt-2" id="exampleModalLabel">전송완료</h5>
+						           <p class="mt-5 mb-3">이메일 주소로 비밀번호 재설정 링크를 발송하였습니다.</p>
+						       </div>
+					       </div>
+				   	   </div>
+				   </div>
                </div>
-   	   		   
            </div>
         </div>
         <div class="row">
