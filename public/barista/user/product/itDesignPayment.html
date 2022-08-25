@@ -53,6 +53,10 @@
     		height: 40px;
     		width: 200px;
     	}
+    	
+    	.btn {
+    		border-radius: 5px;
+    	}
     </style>
 </head>
 
@@ -78,7 +82,7 @@
 			<div class="container">
 				<h4 class="pb-4">결제하기</h4>
 				<div class="row">
-					<div class="col-9">
+					<div class="col-8 pe-0">
 		       			<div class="p-4 border border-2 border-light mb-3">
 		           			<h5 class="mb-3">주문내역</h5>
 		           			<div class="col-sm-12 pb-5">
@@ -110,7 +114,7 @@
 		           			<div class="col-sm-12 pb-5">
 		           				<table>
 		           					<tr>
-		           						<th style="text-align: left;">기본항목</th>
+		           						<th style="text-align: left; width: 500px;">기본항목</th>
 		           						<th>수량</th>
 		           						<th>작업일</th>
 		           						<th style="text-align: right;">가격</th>
@@ -163,33 +167,35 @@
 		           			</div>
 		       			</div>
 	       			</div>
-	       			<div class="col-3">
-		       			<div class="p-4 border border-2 border-light">
-		       				<h5 class="mb-3">최종확인</h5>
-		       				<div class="col-12">
+	       			<div class="col-4 ps-0">
+		       			<div class="p-4 border border-2 border-light border-start-0">
+		       				<h5 class="mb-5">최종확인</h5>
+		       				<div class="col-12 mb-4">
 		       					총 상품 금액
 		       				</div>
-		       				<div class="col-12">
+		       				<div class="col-12 mb-4">
 		       					쿠폰 할인
 		       				</div>
-		       				<div class="col-12">
+		       				<div class="col-12 mb-4">
 		       					캐시 사용
 		       				</div>
 		       				<hr>
-		       				<div class="col-12">
+		       				<div class="col-12 mt-4 mb-5 pt-2">
 				       			총 결제 금액		
 		       				</div>
-		       				<div class="col-12">
-			           			<input type="checkbox" class="form-check-input" name="" id="">
-			           			<label class="form-chech-label" for="">
-			           				주문 내용을 확인하였으며, 결제에 동의합니다.(필수)
+		       				<div style="vertical-align: bottom;">
+		       				<div class="col-12 pt-5">
+			           			<input type="checkbox" class="form-check-input" name="" id="paymentAgree">
+			           			<label class="form-chech-label" for="paymentAgree">
+			           				<span style="font-size: small;">주문 내용을 확인하였으며, 결제에 동의합니다.(필수)</span>
 			           			</label>
 		           			</div>
-		           			<div class="col-12">
-		           				<button class="btn btn-primary">결제하기</button>
+		           			<div class="col-12 mt-3 mb-3">
+		           				<button class="btn btn-primary w-100">결제하기</button>
 		           			</div>
 		           			<div class="col-12">
-		           				<p style="font-size: small;">상품 제공 완료 후 만렙에게 결제 대금이 전달됩니다.</p>
+		           				<p style="font-size: x-small;">상품 제공 완료 후 만렙에게 결제 대금이 전달됩니다.</p>
+		           			</div>
 		           			</div>
 		       			</div>
 	       			</div>
@@ -209,7 +215,7 @@
             			<div class="col-sm-3">
              				<input type="text" class="form-control" id="useCash" placeholder="0원">
             			</div>
-            			<button class="col-sm-1 btn btn-primary" style="background-color: white; color: #AB7442;">전액사용</button>
+            			<button class="col-sm-1 btn btn-primary" style="background-color: white; color: #AB7442; border-radius: 5px;">전액사용</button>
            			</div>
        			</div>
        			<div class="p-4 border border-2 border-light mb-3">
