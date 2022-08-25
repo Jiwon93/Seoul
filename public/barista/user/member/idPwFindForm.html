@@ -31,13 +31,19 @@
     <!-- Template Stylesheet -->
     <link href="../../template/woody/css/style.css" rel="stylesheet">
 	<style type="text/css">
-		.easyLogin {
-			width: 70px;
-			height: 70px;
-			border-radius: 70%;
-			overflow: hidden;
+		.row {
+			flex-wrap: nowrap;
+			display: flex;
+			justify-content: center;
 		}
 		
+		.box {
+			border-radius: 10px;
+		}
+		
+		.btn {
+			border-radius: 5px;
+		}
 	</style>
 
 </head>
@@ -47,7 +53,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="../../index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary">인생만렙</h2>
+            <img src="../images/logo.png" alt="" style="width: 60px; height: 60px;">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -63,79 +69,88 @@
     <!-- Navbar End -->
 
     <!-- Contact Start -->
-    <div class="contaniner-fluid" style="margin: 1rem 0;">
+    <div class="contaniner-fluid mb-4">
     	<div class="row">
     		<div class="col text-center">
     			<h3>아이디/비밀번호 찾기</h3>
     		</div>
     	</div>
     </div>
-    <div class="container-fluid bg-light overflow-hidden" style="margin: 2rem 0;">
-        <div class="container contract">
-           <div class="col-6 contact-text py-3 offset-3">
-               <div class="p-lg-4">
-                   <div class="section-title offset-2">
-                       <h5 class="mb-4">아이디 찾기</h5>
-                   </div>
-                   <form>
-                       <div class="row g-3">
-                           <div class="col-8 offset-2">
-                               <div class="form-floating">
-                                   <input type="text" class="form-control" id="nameFind">
-                                   <label for="nameFind">이름</label>
-                               </div>
-                           </div>
-                           <div class="col-8 offset-2">
-                               <div class="form-floating">
-                                   <input type="text" class="form-control" id="phoneFind">
-                                   <label for="phoneFind">핸드폰 번호</label>
-                               </div>
-                           </div>
-                           <div class="col-8 offset-2">
-                           	   <p>본인인증 받으신 정보를 입력해 주세요. 휴대폰 번호로 이메일 주소를 보내드립니다.</p>
-                           </div>
-                           <div class="col-8 offset-2">
-                               <button class="btn btn-primary w-100 py-2" type="submit">이메일 주소 전송</button>
-                           </div>
+    <div class="container">
+        <div class="row">
+           <div class="box col-sm-4 bg-light">
+           	   <div class="row mt-4">
+	               <div class="section-title">
+	                   <h5 class="mb-4">아이디 찾기</h5>
+	               </div>
+               </div>
+               <div class="row mb-3">
+                   <div class="col">
+                       <div class="form-floating">
+                           <input type="text" class="form-control" id="nameFind">
+                           <label for="nameFind">이름</label>
                        </div>
-                   </form>
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="col">
+                       <div class="form-floating">
+                           <input type="text" class="form-control" id="phoneFind">
+                           <label for="phoneFind">핸드폰 번호</label>
+                       </div>
+                   </div>
+               </div>
+               <div class="row mt-3">
+                   <div class="col">
+                   	   <p>본인인증 받으신 정보를 입력해 주세요. 휴대폰 번호로 이메일 주소를 보내드립니다.</p>
+                   </div>
+               </div>
+               <div class="row mb-4">
+                   <div class="col">
+                       <button class="btn btn-primary w-100 py-2" type="submit">이메일 주소 전송</button>
+                   </div>
                </div>
            </div>
         </div>
-        <div class="container contract">
-           <div class="col-6 contact-text py-3 offset-3">
-               <div class="p-lg-4">
-                   <div class="section-title offset-2">
-                       <h5 class="mb-4">비밀번호 찾기</h5>
-                   </div>
-                   <form>
-                       <div class="row g-3">
-                           <div class="col-8 offset-2">
-                               <div class="form-floating">
-                                   <input type="email" class="form-control" id="emailFind">
-                                   <label for="emailFind">이메일</label>
-                               </div>
-                           </div>
-                           <div class="col-8 offset-2">
-                           	   <p>가입 시 등록하신 이메일 주소를 입력해 주세요. 비밀번호 재설정 링크를 보내드립니다.</p>
-                           </div>
-                           <div class="col-8 offset-2">
-                               <button class="btn btn-primary w-100 py-2" type="submit">비밀번호 재설정 URL 전송</button>
-                           </div>
-                       </div>
-                       <div class="container contract">
-                       	   <div class="row">
-		        			   <div class="col offset-2">
-		        				   <button type="button" class="btn btn-primary mt-5"  onclick="location.href='loginForm.html'">로그인</button>
-		       				   </div>
-		       				   <div class="col">
-		        				   <button type="button" class="btn btn-primary mt-5" onclick="location.href='memberRegFormC.html'">회원가입</button>
-		       				   </div>
-	       				   </div>
-       				   </div>
-                   </form>
+        <div class="row mt-4">
+           <div class="box col-sm-4 bg-light">
+           	   <div class="row mt-4">
+	               <div class="section-title">
+	                   <h5 class="mb-4">비밀번호 찾기</h5>
+	               </div>
                </div>
+               <div class="row">
+                   <div class="col">
+                       <div class="form-floating">
+                           <input type="email" class="form-control" id="emailFind">
+                           <label for="emailFind">이메일</label>
+                       </div>
+                   </div>
+               </div>
+               <div class="row mt-3">
+                   <div class="col">
+                   	   <p>가입 시 등록하신 이메일 주소를 입력해 주세요. 비밀번호 재설정 링크를 보내드립니다.</p>
+                   </div>
+               </div>
+               <div class="row mb-4">
+                   <div class="col">
+                       <button class="btn btn-primary w-100" type="submit">비밀번호 재설정 URL 전송</button>
+                   </div>
+               </div>
+   	   		   
            </div>
+        </div>
+        <div class="row">
+        	<div class="col-sm-4 p-0">
+        		<div class="row mt-3">
+   		   		   <div class="col-6">
+			   		   <button type="button" class="btn btn-secondary mt-2"  onclick="location.href='loginForm.html'">로그인</button>
+			   	   </div>
+			   	   <div class="col-6 text-end">
+			   		   <button type="button" class="btn btn-secondary mt-2" onclick="location.href='memberRegFormC.html'">회원가입</button>
+			   	   </div>
+			   </div>
+        	</div>
         </div>
     </div>
     <!-- Contact End -->
