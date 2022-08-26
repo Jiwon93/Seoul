@@ -49,6 +49,11 @@
 		.sideMenu > li{
 			padding-top: 20px;
 		}
+		
+		.btn {
+    		border-radius: 5px;
+    		height: 45px;
+    	}
     </style>
 </head>
 
@@ -61,13 +66,24 @@
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        	<form class="d-flex" role="search">
+		        <input class="form-control me-2" type="search" style="width: 400px;" placeholder="Search" aria-label="Search">
+		        <button class="btn btn-outline-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+		    </form>
+        </div>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto">
-                <a href="./user/member/loginForm.html" class="nav-item nav-link">로그인</a>
-                <a href="./user/member/memberRegFormC.html" class="nav-item nav-link">회원가입</a>
-            </div>
-            <div class="pe-3">
-            	<button class="btn btn-primary" type="button" href="memberRegFormB.html">만렙등록</button>
+                <a href="../member/loginForm.html" class="nav-item nav-link"><i class="fa-solid fa-comment fa-2x"></i></a>
+                <a href="../member/memberRegFormC.html" class="nav-item nav-link"><i class="fa-solid fa-bell fa-2x"></i></a>
+                <a href="#mypage" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user fa-2x"></i></a>
+                <ul class="dropdown-menu" id="mypage" role="menu" style="right: 0; left: auto;">
+		            <li><a class="dropdown-item" href="#">마이페이지</a></li>
+		            <li><a class="dropdown-item" href="#">구매 목록</a></li>
+		            <li><a class="dropdown-item" href="#">계정 설정</a></li>
+		            <li><hr class="dropdown-divider"></li>
+		            <li><a class="dropdown-item" href="../../index.html">로그 아웃</a></li>
+		        </ul>
             </div>
         </div>
     </nav>
@@ -75,7 +91,7 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5">
+    <div class="container-fluid p-0 pb-5 mt-5">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="../images/slide2.jpg" alt="">
