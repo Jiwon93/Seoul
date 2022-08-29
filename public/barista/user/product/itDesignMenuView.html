@@ -76,6 +76,21 @@
 		.titleView {
 			font-weight: bold;
 		}
+		
+		.inquiryHead {
+			height: 45px;
+			text-indent: 10px;
+			font-size: 18px;
+		}
+		
+		.inquiryBody1 {
+			text-align: left;
+			text-indent: 5px;
+		}
+		
+		.inquiryBody2 {
+			
+		}
 	</style>
 
 </head>
@@ -258,9 +273,9 @@
 	       						</tr>
 	       						<tr>
 	       							<td></td>
-	       							<td><button class="btn btn-primary w-100">구매</button></td>
-	       							<td><button class="btn btn-primary w-100">구매</button></td>
-	       							<td><button class="btn btn-primary w-100">구매</button></td>
+	       							<td><button class="btn btn-primary" style="width: 180px;" onclick="location.href='itDesignPayment.html'">구매</button></td>
+	       							<td><button class="btn btn-primary" style="width: 180px;" onclick="location.href='itDesignPayment.html'">구매</button></td>
+	       							<td><button class="btn btn-primary" style="width: 180px;" onclick="location.href='itDesignPayment.html'">구매</button></td>
 	       						</tr>
 	       						
 	       					</table>
@@ -404,7 +419,7 @@
 					     				</div>
 							     	</div>
 							     	<div>
-							     		<button class="btn btn-primary w-100">구매하기</button>
+							     		<button class="btn btn-primary w-100" onclick="location.href='itDesignPayment.html'">구매하기</button>
 							     	</div>
 							     </div>
 							     <div class="tab-pane fade ms-3 me-3" id="bestDetail">
@@ -480,7 +495,7 @@
 					     				</div>
 							     	</div>
 							     	<div>
-							     		<button class="btn btn-primary w-100">구매하기</button>
+							     		<button class="btn btn-primary w-100" onclick="location.href='itDesignPayment.html'">구매하기</button>
 							     	</div>
 							     </div>
 							     <div class="tab-pane fade ms-3 me-3" id="proDetail">
@@ -556,7 +571,7 @@
 					     				</div>
 							     	</div>
 							     	<div>
-							     		<button class="btn btn-primary w-100">구매하기</button>
+							     		<button class="btn btn-primary w-100" type="button" onclick="location.href='itDesignPayment.html'">구매하기</button>
 							     	</div>
 							     </div>
 							</div>
@@ -566,28 +581,53 @@
 		       			<div class="contatiner-fluid">
 			       			<table class="col-12">
 			       				<tr>
-			       					<th class="" style="text-align: left;">상품문의(00홈페이지)</th>
+			       					<th class="inquiryHead" style="text-align: left;">상품문의(00홈페이지)</th>
 			       				</tr>
 			       				<tr>
-			       					<td style="text-align: left;"> 
-			       						<i class="fa-solid fa-square-phone"></i>결제 전, 전화상담 제공<br>
-			       						<i class="fa-regular fa-clock"></i>연락 가능 시간: 09 ~ 18시<br>
-			       						<i class="fa-solid fa-square-envelope"></i>평균 응답 시간: 3시간 이내
+			       					<td class="inquiryBody1"> 
+			       						<i class="fa-solid fa-square-phone fa-lg"></i>&nbsp;&nbsp;결제 전, 전화상담 제공
 			       					</td>
 			       				</tr>
 			       				<tr>
-			       					<td>5000건</td>
-			       					<td>99%</td>
-			       					<td>개인회원</td>
+			       					<td class="inquiryBody1">
+			       						<i class="fa-regular fa-clock fa-lg"></i>&nbsp;&nbsp;연락 가능 시간: 09 ~ 18시
+			       					</td>
 			       				</tr>
 			       				<tr>
-			       					<td>총 작업개수</td>
-			       					<td>만족도</td>
-			       					<td>회원구분</td>
+			       					<td class="inquiryBody1">
+			       						<i class="fa-solid fa-square-envelope fa-lg"></i>&nbsp;&nbsp;평균 응답 시간: 3시간 이내
+			       					</td>
 			       				</tr>
 			       				<tr>
-			       					<td>
+			       					<td class="inquiryBody2">
+			       						<div>
+			       							5000건
+			       							99%
+			       							개인회원
+			       						</div>
+			       						<div>
+			       							총 작업개수
+			       							만족도
+			       							회원구분
+			       						</div>
+			       					</td>
+			       				</tr>
+			       				<tr>
+			       					<td class="inquiryBody3">
 			       						<a class="btn btn-outline-primary w-100" href="#">문의하기</a>
+		       						</td>
+			       				</tr>
+			       				<tr>
+			       					<td class="inquiryTail">
+			       						<span>소개</span>
+			       						<p>
+			       							케이홈페이지는 지난 13년간 3,000개 이상의 홈페이지를 제작해 왔습니다.
+			       							기본적으로 모든 테마는 반응형[PC+모바일+노트북+태블릿 모두지원]으로 
+			       							이루어져 있고 멋지고 세련된 테마를 통해 보다 빠른 제작이 가능하십니다.
+			       							케이홈페이지는 퀄리티가 높은 테마를 제공합니다. 게시판 프로그램 스킨도 
+			       							직접개발 보유하고 있습니다.
+			       							한번 인연을 맺으면 반드시 다른 기업의 홈페이지 추천을 소개받는 기업입니다. 
+			       						</p>
 			       					</td>
 			       				</tr>
 			       			</table>
