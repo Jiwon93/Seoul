@@ -195,24 +195,26 @@
 		       				<span style="color: #9A9BA7;">(28개의 평가)</span>
 	       				</div>	
 	       				<div class="col-12 mt-5">
-	       					<ul class="nav nav-tabs">
-							    <li class="nav-item col-3">
-							    	<a class="nav-link active" aria-current="page" href="#"><h5>상품 설명</h5></a>
-							    </li>
-							    <li class="nav-item col-3">
-							    	<a class="nav-link" href="#"><h5>가격 정보</h5></a>
-							    </li>
-							    <li class="nav-item col-3">
-							    	<a class="nav-link" href="#"><h5>취소 환불</h5></a>
-							    </li>
-							  	<li class="nav-item col-3">
-							    	<a class="nav-link" href="#"><h5>후기</h5></a>
-							  	</li>
-							</ul>
+	       					<nav id="productMenu">
+		       					<ul class="nav nav-tabs">
+								    <li class="nav-item col-3">
+								    	<a class="nav-link active" aria-current="page" href="#productMenu1"><h5>상품 설명</h5></a>
+								    </li>
+								    <li class="nav-item col-3">
+								    	<a class="nav-link" href="#productMenu2"><h5>가격 정보</h5></a>
+								    </li>
+								    <li class="nav-item col-3">
+								    	<a class="nav-link" href="#productMenu3"><h5>취소 환불</h5></a>
+								    </li>
+								  	<li class="nav-item col-3">
+								    	<a class="nav-link" href="#productMenu4"><h5>후기</h5></a>
+								  	</li>
+								</ul>
+							</nav>
 	       				</div>
-	       				<div class="col-12 text-start mt-4">
+	       				<div class="col-12 text-start mt-4" data-bs-spy="scroll" data-bs-target="#productMenu">
 	       					<br>
-	       					<h5>상품 설명</h5>
+	       					<h5 id="productMenu1">상품 설명</h5>
 	       					<article>
 	       						안녕하세요. 00홈페이지 입니다.<br>
 	       						00홈페이지는 지난 00년간 3,000개 이상의 홈페이지를 제작해 왔습니다.<br>
