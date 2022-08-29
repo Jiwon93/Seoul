@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2번문제</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<style type="text/css">
+		label {
+			font-size: large;
+		}
+		
+		table {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		td {
+			border: 1px solid lightgray;
+		}
+		
+		.tableHead {
+			background-color: black;
+			color: white;
+		}
+	</style>
+
+</head>
+<body>
+	<form action="">
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<div class="col-1">
+					<img src="../images/logo.png" alt="" style="width: 60px; height: 60px;">
+				</div>
+				<div class="col-7 text-center">
+					<h4>인생만렙 Management System</h4>
+				</div>
+				<div class="col-1 text-center">
+					<img src="../images/men.png" class="border border-3 rounded-circle" style="height: 35%; width: 35%;" alt="">
+				</div>
+				<div class="col-2 text-start">
+					<span class="fs-5">Tony Chang</span>
+					<br>
+					<span class="fs-6">Administrator</span>
+				</div>
+				<div class="col-1">
+					<select class="form-select form-select-sm">
+						<option selected>언어</option>
+						<option>한국어</option>
+						<option>영어</option>
+					</select>
+				</div>
+			</div>
+		</nav>
+		<nav class="navbar navbar-expand-lg" style="background-color: #E3F2FD">
+		    <div class="container-fluid">
+		        <a class="navbar-brand" href="#">Navbar</a>
+		        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+			        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			          <li class="nav-item">
+			            <a class="nav-link active" aria-current="page" href="#">회원관리</a>
+			          </li>
+			          <li class="nav-item">
+			            <a class="nav-link" href="#">서비스관리</a>
+			          </li>
+			          <li class="nav-item">
+			            <a class="nav-link" href="#">사이트관리</a>
+			          </li>
+			          <li class="nav-item">
+			            <a class="nav-link" href="#">로그관리</a>
+			          </li>
+			          <li class="nav-item">
+			            <a class="nav-link" href="#">시스템관리</a>
+			          </li>
+			          <li class="nav-item">
+			            <a class="nav-link" href="#">시스템관리</a>
+			          </li>
+			        </ul>
+		        </div>
+		    </div>
+		</nav>
+		<div class="container-fluid">
+			<div class="row mt-4">
+				<div class="col-2">
+					<ul>
+						<li>
+							<a>Home</a>
+						</li>
+						<li>
+							<a>Dashboard</a>
+						</li>
+						<li>
+							<a>Orders</a>
+						</li>
+						<li><hr><li>
+						<li>
+							<a>Account</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-10">
+					<div class="row">
+						<h4>코드그룹 관리</h4>
+						<div class="border">
+							<div class="row mb-2">
+								<div class="col-2 p-1">
+									<select class="form-select">
+										<option>N</option>
+									</select>
+								</div>
+								<div class="col-2 p-1">
+									<select class="form-select">
+										<option>수정일</option>
+									</select>
+								</div>
+								<div class="col-2 p-1">
+									<input class="form-control" type="text" placeholder="시작일">
+								</div>
+								<div class="col-2 p-1">
+									<input class="form-control" type="text" placeholder="종료일">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-2 p-1">
+									<select class="form-select">
+										<option>검색구분</option>
+									</select>
+								</div>
+								<div class="col-2 p-1">
+									<input class="form-control" type="text" placeholder="검색어">
+									<a class="btn btn-warning" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+									<a class="btn btn-danger" href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="row">
+							<div class="col">
+								<span>Total: 42</span>
+							</div>
+							<div class="col">
+								<div class="col">
+									<select class="form-select">
+										<option>10</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<table>
+								<tr>
+									<td class="tableHead">
+										<input type="checkbox">
+									</td>
+									<td class="tableHead">#</td>
+									<td class="tableHead">코드그룹 코드</td>
+									<td class="tableHead">코드그룹 이름 (한글)</td>
+									<td class="tableHead">코드그룹 이름 (영문)</td>
+									<td class="tableHead">코드갯수</td>
+									<td class="tableHead">등록일</td>
+									<td class="tableHead">수정일</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>#</td>
+									<td>코드그룹 코드</td>
+									<td>코드그룹 이름 (한글)</td>
+									<td>코드그룹 이름 (영문)</td>
+									<td>코드갯수</td>
+									<td>등록일</td>
+									<td>수정일</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>#</td>
+									<td>코드그룹 코드</td>
+									<td>코드그룹 이름 (한글)</td>
+									<td>코드그룹 이름 (영문)</td>
+									<td>코드갯수</td>
+									<td>등록일</td>
+									<td>수정일</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>#</td>
+									<td>코드그룹 코드</td>
+									<td>코드그룹 이름 (한글)</td>
+									<td>코드그룹 이름 (영문)</td>
+									<td>코드갯수</td>
+									<td>등록일</td>
+									<td>수정일</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>#</td>
+									<td>코드그룹 코드</td>
+									<td>코드그룹 이름 (한글)</td>
+									<td>코드그룹 이름 (영문)</td>
+									<td>코드갯수</td>
+									<td>등록일</td>
+									<td>수정일</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>#</td>
+									<td>코드그룹 코드</td>
+									<td>코드그룹 이름 (한글)</td>
+									<td>코드그룹 이름 (영문)</td>
+									<td>코드갯수</td>
+									<td>등록일</td>
+									<td>수정일</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>#</td>
+									<td>코드그룹 코드</td>
+									<td>코드그룹 이름 (한글)</td>
+									<td>코드그룹 이름 (영문)</td>
+									<td>코드갯수</td>
+									<td>등록일</td>
+									<td>수정일</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>#</td>
+									<td>코드그룹 코드</td>
+									<td>코드그룹 이름 (한글)</td>
+									<td>코드그룹 이름 (영문)</td>
+									<td>코드갯수</td>
+									<td>등록일</td>
+									<td>수정일</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>#</td>
+									<td>코드그룹 코드</td>
+									<td>코드그룹 이름 (한글)</td>
+									<td>코드그룹 이름 (영문)</td>
+									<td>코드갯수</td>
+									<td>등록일</td>
+									<td>수정일</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>#</td>
+									<td>코드그룹 코드</td>
+									<td>코드그룹 이름 (한글)</td>
+									<td>코드그룹 이름 (영문)</td>
+									<td>코드갯수</td>
+									<td>등록일</td>
+									<td>수정일</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>#</td>
+									<td>코드그룹 코드</td>
+									<td>코드그룹 이름 (한글)</td>
+									<td>코드그룹 이름 (영문)</td>
+									<td>코드갯수</td>
+									<td>등록일</td>
+									<td>수정일</td>
+								</tr>
+							</table>
+						</div>
+						<div class="row mt-2 text-center" style="justify-content: center;">
+						  <ul class="pagination">
+						    <li class="page-item">
+						        <a class="page-link active" aria-current="page">1</a>
+						    </li>
+						    <li class="page-item">
+						    	<a class="page-link" href="#">2</a>
+					    	</li>
+						    <li class="page-item">
+						        <a class="page-link" href="#">3</a>
+						    </li>
+						    <li class="page-item">
+						    	<a class="page-link" href="#">4</a>
+					    	</li>
+						    <li class="page-item">
+						        <a class="page-link" href="#">5</a>
+						    </li>
+						  </ul>
+						</div>
+						<div class="row">
+							<div class="col"></div>
+								<a class="btn btn-danger" href="#"><i class="fa-regular fa-xmark"></i></a>
+							</div>
+							<div class="col">
+								<a class="btn btn-danger" href="#"><i class="fa-regular fa-trash-can"></i></a>
+							</div>
+							<div class="col">
+								<a class="btn btn-success" href="#"><i class="fa-regular fa-file-excel"></i></a>
+							</div>
+							<div class="col">
+								<a class="btn btn-primary" href="#"><i class="fa-regular fa-plus"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
