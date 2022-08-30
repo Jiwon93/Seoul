@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>2번문제</title>
+<title>codeGroupList</title>
 	<link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sidebars/">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<!-- Fontawesome Stylesheet -->
@@ -20,14 +20,21 @@
 		
 		td {
 			border: 1px solid lightgray;
+			height: 35px;
 		}
 		
 		.tableHead {
 			background-color: black;
 			color: white;
 		}
+		
+		.listCheck {
+			text-align: center;
+			justify-content: center;
+		}
 	</style>
-
+	
+	<link href="../css/list.css" rel="stylesheet">
 </head>
 <body>
 	<form action="">
@@ -146,8 +153,8 @@
 				<div class="col-10">
 					<div class="row">
 						<h4>코드그룹 관리</h4>
-						<div class="border">
-							<div class="row mb-2">
+						<div class="col border">
+							<div class="row mt-2 mb-2">
 								<div class="col-2 p-1">
 									<select class="form-select">
 										<option>N</option>
@@ -165,7 +172,7 @@
 									<input class="form-control" type="text" placeholder="종료일">
 								</div>
 							</div>
-							<div class="row">
+							<div class="row mb-2">
 								<div class="col-2 p-1">
 									<select class="form-select">
 										<option>검색구분</option>
@@ -183,22 +190,22 @@
 					</div>
 					<div class="row mt-3">
 						<div class="row">
-							<div class="col">
+							<div class="col-11 p-0">
 								<span>Total: 42</span>
 							</div>
-							<div class="col">
-								<div class="col-2">
-									<select class="form-select">
+							<div class="col-1 p-0">
+								<div class="col-12">
+									<select class="form-select py-1" style="height: 30px; font-size: 12px;">
 										<option>10</option>
 									</select>
 								</div>
 							</div>
 						</div>
-						<div class="row mt-3">
+						<div class="row mt-1">
 							<table>
 								<tr>
 									<td class="tableHead">
-										<input type="checkbox">
+										<input class="listCheck" type="checkbox">
 									</td>
 									<td class="tableHead">#</td>
 									<td class="tableHead">코드그룹 코드</td>
@@ -209,7 +216,7 @@
 									<td class="tableHead">수정일</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input class="listCheck" type="checkbox"></td>
 									<td>#</td>
 									<td>코드그룹 코드</td>
 									<td>코드그룹 이름 (한글)</td>
@@ -219,7 +226,7 @@
 									<td>수정일</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input class="listCheck" type="checkbox"></td>
 									<td>#</td>
 									<td>코드그룹 코드</td>
 									<td>코드그룹 이름 (한글)</td>
@@ -229,7 +236,7 @@
 									<td>수정일</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input class="listCheck" type="checkbox"></td>
 									<td>#</td>
 									<td>코드그룹 코드</td>
 									<td>코드그룹 이름 (한글)</td>
@@ -239,7 +246,7 @@
 									<td>수정일</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input class="listCheck" type="checkbox"></td>
 									<td>#</td>
 									<td>코드그룹 코드</td>
 									<td>코드그룹 이름 (한글)</td>
@@ -249,7 +256,7 @@
 									<td>수정일</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input class="listCheck" type="checkbox"></td>
 									<td>#</td>
 									<td>코드그룹 코드</td>
 									<td>코드그룹 이름 (한글)</td>
@@ -259,7 +266,7 @@
 									<td>수정일</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input class="listCheck" type="checkbox"></td>
 									<td>#</td>
 									<td>코드그룹 코드</td>
 									<td>코드그룹 이름 (한글)</td>
@@ -269,7 +276,7 @@
 									<td>수정일</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input class="listCheck" type="checkbox"></td>
 									<td>#</td>
 									<td>코드그룹 코드</td>
 									<td>코드그룹 이름 (한글)</td>
@@ -279,7 +286,7 @@
 									<td>수정일</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input class="listCheck" type="checkbox"></td>
 									<td>#</td>
 									<td>코드그룹 코드</td>
 									<td>코드그룹 이름 (한글)</td>
@@ -289,7 +296,7 @@
 									<td>수정일</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input class="listCheck" type="checkbox"></td>
 									<td>#</td>
 									<td>코드그룹 코드</td>
 									<td>코드그룹 이름 (한글)</td>
@@ -299,7 +306,7 @@
 									<td>수정일</td>
 								</tr>
 								<tr>
-									<td><input type="checkbox"></td>
+									<td><input class="listCheck" type="checkbox"></td>
 									<td>#</td>
 									<td>코드그룹 코드</td>
 									<td>코드그룹 이름 (한글)</td>
@@ -310,8 +317,13 @@
 								</tr>
 							</table>
 						</div>
-						<div class="row mt-2 text-center" style="justify-content: center;">
-						  <ul class="pagination">
+						<div class="row mt-2 text-center">
+						  <ul class="pagination" style="justify-content: center;">
+						  	<li class="page-item">
+						      <a class="page-link" href="#" aria-label="Previous">
+						        <span aria-hidden="true">&laquo;</span>
+						      </a>
+						    </li>
 						    <li class="page-item">
 						        <a class="page-link active" aria-current="page">1</a>
 						    </li>
@@ -327,9 +339,14 @@
 						    <li class="page-item">
 						        <a class="page-link" href="#">5</a>
 						    </li>
+						    <li class="page-item">
+						      <a class="page-link" href="#" aria-label="Next">
+						        <span aria-hidden="true">&raquo;</span>
+						      </a>
+						    </li>
 						  </ul>
 						</div>
-						<div class="row">
+						<div class="row p-0">
 							<div class="col">
 								<a class="btn btn-danger" href="#"><i class="fa-regular fa-xmark"></i></a>
 								<a class="btn btn-danger" href="#"><i class="fa-regular fa-trash-can"></i></a>
@@ -343,6 +360,25 @@
 				</div>
 			</div>
 		</div>
+		<!-- Footer Start -->
+	    <div class="container-fluid bg-dark text-light footer mt-5 pt-5">
+	    	<div class="container">
+	            <div class="copyright">
+	                <div class="row">
+	                    <div class="col text-center">
+	                        Copyright &copy; 2022&nbsp;<a class="border-bottom" href="#">ISML</a>&nbsp;lnc, All Right Reserved.
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col text-center">
+	                        Designed By <a class="border-bottom" href="#">HTML Codex</a>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- Footer End -->
 	</form>
+	<script type="text/javascript" src="../js/list.js"></script>
 </body>
 </html>
