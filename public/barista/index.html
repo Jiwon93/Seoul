@@ -33,6 +33,12 @@
     
     <!-- Fontawesome Stylesheet -->
     <script src="https://kit.fontawesome.com/059fbc3cf8.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+    	.btn {
+    		border-radius: 5px;
+    		height: 45px;
+    	}
+    </style>
 </head>
 
 <body>
@@ -56,7 +62,7 @@
                 <a href="./user/member/memberRegFormC.html" class="nav-item nav-link">회원가입</a>
             </div>
             <div class="pe-3">
-            	<button class="btn btn-primary" type="button" href="./user/member/memberRegFormB.html">만렙등록</button>
+            	<button class="btn btn-primary" type="button" onclick="location.href='./user/member/memberRegFormB.html'">만렙등록</button>
             </div>
         </div>
     </nav>
@@ -64,7 +70,7 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5">
+    <div class="container-fluid p-0 pb-5 mt-5">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="user/images/slide1.jpg" alt="">
@@ -81,7 +87,7 @@
     
     <!--  Menu Start -->
 	<div class="container py-5">
-		<div class="row">
+		<div class="row ms-5 me-5">
 			<div class="col overflow-hidden text-center">
 				<a href="user/product/itDesignMenu.html" id="developDesign"><i class="fa-solid fa-computer fa-4x"></i></a>
 				<br><label class="text-primary" for="developDesign"><b>개발/디자인</b></label>
@@ -102,11 +108,8 @@
 				<a href="#" id="photoVideo"><i class="fa-solid fa-camera fa-4x"></i></a>
 				<br><label class="text-primary" for="photoVideo"><b>사진/영상</b></label>
 			</div>
-			
 		</div>
-	</div>
-	<div class="container py-5">
-		<div class="row">
+		<div class="row ms-5 me-5 mt-5">
 			<div class="col text-center">
 				<a href="#" id="beautyHealth"><i class="fa-solid fa-heart fa-4x"></i></a>
 				<br><label class="text-primary" for="beautyHealth"><b>미용/건강</b></label>
@@ -319,7 +322,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="footer container">
         	<div class="row py-3">
         		<div class="col text-center">
         			이용약관
@@ -340,7 +343,7 @@
         		</div>
         	</div>
         </div>
-        <div class="container">
+        <div class="footerBottom container">
         	<div class="row">
         		<div class="col text-center">
         			<p class="m-1">
@@ -363,7 +366,7 @@
         		</div>
         	</div>
         </div>
-        <div class="container">
+        <div class="footerBottom container">
             <div class="copyright">
                 <div class="row">
                     <div class="col text-center">

@@ -49,6 +49,26 @@
 		.sideMenu > li{
 			padding-top: 20px;
 		}
+		
+		.menuHead {
+			background-color: #FAFAFC;
+			font-weight: bold;
+			height: 40px;
+			text-indent: 20px;
+			border-right: 1px solid #E0E1E9;
+		} 
+		
+		.menuBody {
+			text-indent: 20px;
+			border: 1px solid #E0E1E9;
+			font-size: 13px;
+			word-spacing: 20px;
+		}
+		
+		.btn {
+    		border-radius: 5px;
+    		height: 45px;
+    	}
     </style>
 </head>
 
@@ -61,13 +81,24 @@
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        	<form class="d-flex" role="search">
+		        <input class="form-control me-2" type="search" style="width: 400px;" placeholder="Search" aria-label="Search">
+		        <button class="btn btn-outline-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+		    </form>
+        </div>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto">
-                <a href="./user/member/loginForm.html" class="nav-item nav-link">로그인</a>
-                <a href="./user/member/memberRegFormC.html" class="nav-item nav-link">회원가입</a>
-            </div>
-            <div class="pe-3">
-            	<button class="btn btn-primary" type="button" href="memberRegFormB.html">만렙등록</button>
+                <a href="#" class="nav-item nav-link"><i class="fa-solid fa-comment fa-2x"></i></a>
+                <a href="#" class="nav-item nav-link"><i class="fa-solid fa-bell fa-2x"></i></a>
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user fa-2x"></i></a>
+                <ul class="dropdown-menu" id="" role="menu" style="right: 0; left: auto;">
+		            <li><a class="dropdown-item" href="#">마이페이지</a></li>
+		            <li><a class="dropdown-item" href="#">구매 목록</a></li>
+		            <li><a class="dropdown-item" href="#">계정 설정</a></li>
+		            <li><hr class="dropdown-divider"></li>
+		            <li><a class="dropdown-item" href="../../index.html">로그 아웃</a></li>
+		        </ul>
             </div>
         </div>
     </nav>
@@ -75,7 +106,7 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5">
+    <div class="container-fluid p-0 pb-5 mt-5">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="../images/slide2.jpg" alt="">
@@ -163,23 +194,35 @@
 						</ol>
 					</nav>
 				</div>
-				<div class="row p-3">
+				<div class="row ps-3">
 					<table class="border border-1">
 						<tr>
-							<td>기술 수준</td>
-							<td>초급 중급 고급</td>
+							<td class="menuHead">기술 수준</td>
+							<td class="menuBody">
+								<a class="menuOption" href="#">초급</a> 
+								<a class="menuOption" href="#">중급</a> 
+								<a class="menuOption" href="#">고급</a>
+							</td>
 						</tr>
 						<tr>
-							<td>팀 규모</td>
-							<td>1인 5인미만 30인미만 30인이상</td>
+							<td class="menuHead">팀 규모</td>
+							<td class="menuBody">
+								<a class="menuOption" href="#">1인</a> 
+								<a class="menuOption" href="#">5인미만</a> 
+								<a class="menuOption" href="#">30인미만</a> 
+								<a class="menuOption" href="#">30인이상</a>
+							</td>
 						</tr>
 						<tr>
-							<td>주말 여부</td>
-							<td>가능 불가능</td>
+							<td class="menuHead">주말 여부</td>
+							<td class="menuBody">
+								<a class="menuOption" href="#">가능</a> 
+								<a class="menuOption" href="#">불가능</a>
+							</td>
 						</tr>
 					</table>
 				</div>
-				<div class="row p-1 mt-4 mb-5">
+				<div class="row p-1 mt-5 mb-5">
 	           		<div class="col-3 service-item">
 	               		<div class="overflow-hidden">
 	               	    	<a href="itDesignMenuView.html"><img class="menuDD" src="../images/main.jpg"></a>

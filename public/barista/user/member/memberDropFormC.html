@@ -54,6 +54,7 @@
     	
     	.btn {
     		border-radius: 5px;
+    		height: 45px;
     	}
     	
     	.mypageC {
@@ -107,7 +108,7 @@
 						<img src="../images/men.png" class="border border-3 rounded-circle" style="height: 40%; width: 40%;" alt="">
 					</div>
 					<div class="text-center pb-4">
-						<button class="btn btn-secondary" style="width: 60px; font-size: small;">일반</button>
+						<button class="btn btn-secondary" style="height: 30px; width: 60px; font-size: small;">일반</button>
 						<span class="px-3">jiwon123</span>
 					</div>
 					<div class="text-center pb-5">
@@ -189,7 +190,27 @@
 	                               <label class="form-check-label" for="">주의사항을 모두 확인하였습니다.</label>
 		                       </div>
 							   <div class="col-3 text-end">
-							   	   <button type="button" class="btn btn-primary" onclick="location.href='memberViewFormC.html'">회원탈퇴</button>	
+							   	   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#memberDropCBtn">회원탈퇴</button>	
+							   </div>
+							   <div class="modal fade" id="memberDropCBtn" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							   	   <div class="modal-dialog modal-dialog-centered">
+								       <div class="modal-content ">
+								       	   <div class="modal-head text-end me-3 mt-3">
+								       	   	   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								       	   </div>
+									       <div class="modal-body text-center">
+									           <h5 class="modal-title mt-2" id="exampleModalLabel">정말 탈퇴하시겠습니까?</h5>
+									           <div class="row mt-5">
+										           <div class="col-6 text-center">
+										           	   <button class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">취소</button>
+										           </div>
+										           <div class="col-6 text-center">
+										           	   <button class="btn btn-danger" onclick="location.href='../../index.html'">확인</button>
+										           </div>
+									           </div>
+									       </div>
+								       </div>
+							   	   </div>
 							   </div>
 		                   </div>
 	                   </div>
