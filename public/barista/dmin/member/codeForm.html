@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>codeGroupList</title>
+<title>codeForm</title>
 	<link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sidebars/">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<!-- Fontawesome Stylesheet -->
@@ -18,16 +18,11 @@
 			margin-right: auto;
 		}
 		
-		td {
+		th, td {
 			border: 1px solid lightgray;
 			height: 35px;
 		}
-		
-		.tableHead {
-			background-color: black;
-			color: white;
-		}
-		
+
 		.listCheck {
 			text-align: center;
 			justify-content: center;
@@ -152,208 +147,121 @@
 				</div>
 				<div class="col-10">
 					<div class="row">
-						<h4>코드그룹 관리</h4>
-						<div class="col border">
-							<div class="row mt-2 mb-2">
-								<div class="col-2 p-1">
-									<select class="form-select">
+						<h4>코드 관리</h4>
+						<div class="container-fluid">
+							<div class="row m-4">
+								<div class="col-6">
+									<label class="form-label" for="registName1">사용여부</label>
+									<select class="form-select" id="registName1">
+										<option selected>선택하세요</option>
+										<option>Y</option>
 										<option>N</option>
 									</select>
 								</div>
-								<div class="col-2 p-1">
-									<select class="form-select">
-										<option>수정일</option>
-									</select>
+							</div>
+							<div class="row m-4">
+								<div class="col mx-auto">
+									<label class="form-label" for="registPw">코드</label>
+									<input type="text" class="form-control" id="registPw" placeholder="자동생성" readonly>
 								</div>
-								<div class="col-2 p-1">
-									<input class="form-control" type="text" placeholder="시작일">
-								</div>
-								<div class="col-2 p-1">
-									<input class="form-control" type="text" placeholder="종료일">
+								<div class="col mx-auto">
+									<label class="form-label" for="registPwCheck">코드 (Another)</label>
+									<input type="text" class="form-control" id="registPwCheck">
 								</div>
 							</div>
-							<div class="row mb-2">
-								<div class="col-2 p-1">
-									<select class="form-select">
-										<option>검색구분</option>
+							<div class="row m-4">
+								<div class="col mx-auto">
+									<label class="form-label" for="codeNameKor">코드 이름 (한글)</label>
+									<input type="text" class="form-control" id="codeNameKor">
+								</div>
+								<div class="col mx-auto">
+									<label class="form-label" for="codeNameEng">코드 이름 (영문)</label>
+									<input type="text" class="form-control" id="codeNameEng">
+								</div>
+							</div>
+							<div class="row m-4">
+								<div class="col mx-auto">
+									<label class="form-label" for="registName1">사용여부</label>
+									<select class="form-select" id="registName1">
+										<option>Y</option>
+										<option>N</option>
 									</select>
 								</div>
-								<div class="col-2 p-1">
-									<input class="form-control" type="text" placeholder="검색어">
+								<div class="col mx-auto">
+									<label class="form-label" for="registName2">순서</label>
+									<input type="text" class="form-control" id="registName2">
 								</div>
-								<div class="col-1 p-1">
-									<a class="btn btn-warning" href="#" role="button"><i class="fa-solid fa-magnifying-glass"></i></a>
-									<a class="btn btn-danger" href="#" role="button"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+							</div>
+							<div class="row m-4">
+								<div class="col mx-auto">
+									<label class="form-label" for="registName">설명</label>
+									<textarea  class="form-control" id="registName"></textarea>
+								</div>
+								<div class="col mx-auto">
+									<label class="form-label" for="registFirstName">삭제여부</label>
+									<select class="form-select" id="registFirstName">
+										<option>Y</option>
+										<option>N</option>
+									</select>
+								</div>
+							</div>
+							<div class="row m-4">
+								<div class="col mx-auto">
+									<label class="form-label" for="registNameEng">예비1 (varchar type)</label>
+									<input type="text" class="form-control" id="registNameEng" placeholder="영문(대소문자),숫자">
+								</div>
+								<div class="col mx-auto">
+									<label class="form-label" for="registFirstNameEng">예비3 (varchar type)</label>
+									<input type="text" class="form-control" id="registFirstNameEng" placeholder="영문(대소문자),숫자">
+								</div>
+							</div>
+							<div class="row m-4">
+								<div class="col mx-auto">
+									<label class="form-label" for="registFirstNameEng1">예비3 (varchar type)</label>
+									<input type="text" class="form-control" id="registFirstNameEng1" placeholder="영문(대소문자),숫자">
+								</div>
+								<div class="col mx-auto">
+									<label class="form-label" for="registFirstNameEng2">예비4 (varchar type)</label>
+									<input type="text" class="form-control" id="registFirstNameEng2" placeholder="영문(대소문자),숫자">
+								</div>
+							</div>
+							<div class="row m-4">
+								<div class="col mx-auto">
+									<label class="form-label" for="registFirstNameEng3">예비1 (int type)</label>
+									<input type="text" class="form-control" id="registFirstNameEng3" placeholder="숫자">
+								</div>
+								<div class="col mx-auto">
+									<label class="form-label" for="registFirstNameEng4">예비2 (int type)</label>
+									<input type="text" class="form-control" id="registFirstNameEng4" placeholder="숫자">
+								</div>
+							</div>
+							<div class="row m-4">
+								<div class="col mx-auto">
+									<label class="form-label" for="registFirstNameEng5">예비3 (int type)</label>
+									<input type="text" class="form-control" id="registFirstNameEng5" placeholder="숫자">
+								</div>
+								<div class="col mx-auto">
+									<label class="form-label" for="registFirstNameEng6">예비4 (int type)</label>
+									<input type="text" class="form-control" id="registFirstNameEng6" placeholder="숫자">
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row mt-3">
 						<div class="row">
-							<div class="col-11 p-0">
-								<span>Total: 42</span>
+							<div class="col px-5">
+								<button class="btn btn-secondary" type="button">
+									<i class="fa-solid fa-bars"></i>
+								</button>
 							</div>
-							<div class="col-1 p-0">
-								<div class="col-12">
-									<select class="form-select py-1" style="height: 30px; font-size: 12px;">
-										<option>10</option>
-									</select>
-								</div>
-							</div>
-						</div>
-						<div class="row mt-1">
-							<table class="table table-striped table-hover border">
-								<tr class="table-dark">
-									<td class="tableHead">
-										<input class="listCheck" type="checkbox">
-									</td>
-									<td class="tableHead">#</td>
-									<td class="tableHead">코드그룹 코드</td>
-									<td class="tableHead">코드그룹 이름 (한글)</td>
-									<td class="tableHead">코드그룹 이름 (영문)</td>
-									<td class="tableHead">코드갯수</td>
-									<td class="tableHead">등록일</td>
-									<td class="tableHead">수정일</td>
-								</tr>
-								<tr>
-									<td><input class="listCheck" type="checkbox"></td>
-									<td>#</td>
-									<td>코드그룹 코드</td>
-									<td>코드그룹 이름 (한글)</td>
-									<td>코드그룹 이름 (영문)</td>
-									<td>코드갯수</td>
-									<td>등록일</td>
-									<td>수정일</td>
-								</tr>
-								<tr>
-									<td><input class="listCheck" type="checkbox"></td>
-									<td>#</td>
-									<td>코드그룹 코드</td>
-									<td>코드그룹 이름 (한글)</td>
-									<td>코드그룹 이름 (영문)</td>
-									<td>코드갯수</td>
-									<td>등록일</td>
-									<td>수정일</td>
-								</tr>
-								<tr>
-									<td><input class="listCheck" type="checkbox"></td>
-									<td>#</td>
-									<td>코드그룹 코드</td>
-									<td>코드그룹 이름 (한글)</td>
-									<td>코드그룹 이름 (영문)</td>
-									<td>코드갯수</td>
-									<td>등록일</td>
-									<td>수정일</td>
-								</tr>
-								<tr>
-									<td><input class="listCheck" type="checkbox"></td>
-									<td>#</td>
-									<td>코드그룹 코드</td>
-									<td>코드그룹 이름 (한글)</td>
-									<td>코드그룹 이름 (영문)</td>
-									<td>코드갯수</td>
-									<td>등록일</td>
-									<td>수정일</td>
-								</tr>
-								<tr>
-									<td><input class="listCheck" type="checkbox"></td>
-									<td>#</td>
-									<td>코드그룹 코드</td>
-									<td>코드그룹 이름 (한글)</td>
-									<td>코드그룹 이름 (영문)</td>
-									<td>코드갯수</td>
-									<td>등록일</td>
-									<td>수정일</td>
-								</tr>
-								<tr>
-									<td><input class="listCheck" type="checkbox"></td>
-									<td>#</td>
-									<td>코드그룹 코드</td>
-									<td>코드그룹 이름 (한글)</td>
-									<td>코드그룹 이름 (영문)</td>
-									<td>코드갯수</td>
-									<td>등록일</td>
-									<td>수정일</td>
-								</tr>
-								<tr>
-									<td><input class="listCheck" type="checkbox"></td>
-									<td>#</td>
-									<td>코드그룹 코드</td>
-									<td>코드그룹 이름 (한글)</td>
-									<td>코드그룹 이름 (영문)</td>
-									<td>코드갯수</td>
-									<td>등록일</td>
-									<td>수정일</td>
-								</tr>
-								<tr>
-									<td><input class="listCheck" type="checkbox"></td>
-									<td>#</td>
-									<td>코드그룹 코드</td>
-									<td>코드그룹 이름 (한글)</td>
-									<td>코드그룹 이름 (영문)</td>
-									<td>코드갯수</td>
-									<td>등록일</td>
-									<td>수정일</td>
-								</tr>
-								<tr>
-									<td><input class="listCheck" type="checkbox"></td>
-									<td>#</td>
-									<td>코드그룹 코드</td>
-									<td>코드그룹 이름 (한글)</td>
-									<td>코드그룹 이름 (영문)</td>
-									<td>코드갯수</td>
-									<td>등록일</td>
-									<td>수정일</td>
-								</tr>
-								<tr>
-									<td><input class="listCheck" type="checkbox"></td>
-									<td>#</td>
-									<td>코드그룹 코드</td>
-									<td>코드그룹 이름 (한글)</td>
-									<td>코드그룹 이름 (영문)</td>
-									<td>코드갯수</td>
-									<td>등록일</td>
-									<td>수정일</td>
-								</tr>
-							</table>
-						</div>
-						<div class="row mt-2 text-center">
-						  <ul class="pagination" style="justify-content: center;">
-						  	<li class="page-item">
-						      <a class="page-link" href="#" aria-label="Previous">
-						        <span aria-hidden="true">&laquo;</span>
-						      </a>
-						    </li>
-						    <li class="page-item">
-						        <a class="page-link active" aria-current="page">1</a>
-						    </li>
-						    <li class="page-item">
-						    	<a class="page-link" href="#">2</a>
-					    	</li>
-						    <li class="page-item">
-						        <a class="page-link" href="#">3</a>
-						    </li>
-						    <li class="page-item">
-						    	<a class="page-link" href="#">4</a>
-					    	</li>
-						    <li class="page-item">
-						        <a class="page-link" href="#">5</a>
-						    </li>
-						    <li class="page-item">
-						      <a class="page-link" href="#" aria-label="Next">
-						        <span aria-hidden="true">&raquo;</span>
-						      </a>
-						    </li>
-						  </ul>
-						</div>
-						<div class="row p-0">
-							<div class="col">
-								<a class="btn btn-danger" href="#"><i class="fa-duotone fa-x"></i></a>
-								<a class="btn btn-danger" href="#"><i class="fa-regular fa-trash-can"></i></a>
-							</div>
-							<div class="col" style="text-align: right;">
-								<a class="btn btn-success" href="#"><i class="fa-regular fa-file-excel"></i></a>
-								<a class="btn btn-primary" href="#"><i class="fa-regular fa-plus"></i></a>
+							<div class="col px-4" style="text-align: right;">
+								<button class="btn btn-danger" type="button">
+									<i class="fa-duotone fa-x"></i>
+								</button>
+								<button class="btn btn-danger" type="button">
+									<i class="fa-regular fa-trash-can"></i>
+								</button>
+								<button class="btn btn-success" type="button">
+									<i class="fa-regular fa-file-excel"></i>
+								</button>
 							</div>
 						</div>
 					</div>
