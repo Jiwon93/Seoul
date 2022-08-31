@@ -32,7 +32,7 @@
 	<link href="../css/list.css" rel="stylesheet">
 </head>
 <body>
-	<form action="">
+	<form action="" method="get" id="codeForm" action="">
 		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid">
 				<div class="col-1">
@@ -151,8 +151,8 @@
 						<div class="container-fluid">
 							<div class="row m-4">
 								<div class="col-6">
-									<label class="form-label" for="registName1">사용여부</label>
-									<select class="form-select" id="registName1">
+									<label class="form-label" for="cfUseOrNot1">사용여부</label>
+									<select class="form-select" id="cfUseOrNot1">
 										<option selected>선택하세요</option>
 										<option>Y</option>
 										<option>N</option>
@@ -161,45 +161,45 @@
 							</div>
 							<div class="row m-4">
 								<div class="col mx-auto">
-									<label class="form-label" for="registPw">코드</label>
-									<input type="text" class="form-control" id="registPw" placeholder="자동생성" readonly>
+									<label class="form-label" for="cfCode">코드</label>
+									<input type="text" class="form-control" id="cfCode" placeholder="자동생성" readonly>
 								</div>
 								<div class="col mx-auto">
-									<label class="form-label" for="registPwCheck">코드 (Another)</label>
-									<input type="text" class="form-control" id="registPwCheck">
-								</div>
-							</div>
-							<div class="row m-4">
-								<div class="col mx-auto">
-									<label class="form-label" for="codeNameKor">코드 이름 (한글)</label>
-									<input type="text" class="form-control" id="codeNameKor">
-								</div>
-								<div class="col mx-auto">
-									<label class="form-label" for="codeNameEng">코드 이름 (영문)</label>
-									<input type="text" class="form-control" id="codeNameEng">
+									<label class="form-label" for="cfCodeAnother">코드 (Another)</label>
+									<input type="text" class="form-control" id="cfCodeAnother">
 								</div>
 							</div>
 							<div class="row m-4">
 								<div class="col mx-auto">
-									<label class="form-label" for="registName1">사용여부</label>
-									<select class="form-select" id="registName1">
+									<label class="form-label" for="cfCodeNameKor">코드 이름 (한글)</label>
+									<input type="text" class="form-control" id="cfCodeNameKor">
+								</div>
+								<div class="col mx-auto">
+									<label class="form-label" for="cfCodeNameEng">코드 이름 (영문)</label>
+									<input type="text" class="form-control" id="cfCodeNameEng">
+								</div>
+							</div>
+							<div class="row m-4">
+								<div class="col mx-auto">
+									<label class="form-label" for="cfUseOrNot2">사용여부</label>
+									<select class="form-select" id="cfUseOrNot2">
 										<option>Y</option>
 										<option>N</option>
 									</select>
 								</div>
 								<div class="col mx-auto">
-									<label class="form-label" for="registName2">순서</label>
-									<input type="text" class="form-control" id="registName2">
+									<label class="form-label" for="cfOrder">순서</label>
+									<input type="text" class="form-control" id="cfOrder">
 								</div>
 							</div>
 							<div class="row m-4">
 								<div class="col mx-auto">
-									<label class="form-label" for="registName">설명</label>
-									<textarea  class="form-control" id="registName"></textarea>
+									<label class="form-label" for="cfExplain">설명</label>
+									<textarea  class="form-control" id="cfExplain"></textarea>
 								</div>
 								<div class="col mx-auto">
-									<label class="form-label" for="registFirstName">삭제여부</label>
-									<select class="form-select" id="registFirstName">
+									<label class="form-label" for="cfDelNy">삭제여부</label>
+									<select class="form-select" id="cfDelNy">
 										<option>Y</option>
 										<option>N</option>
 									</select>
@@ -207,42 +207,42 @@
 							</div>
 							<div class="row m-4">
 								<div class="col mx-auto">
-									<label class="form-label" for="registNameEng">예비1 (varchar type)</label>
-									<input type="text" class="form-control" id="registNameEng" placeholder="영문(대소문자),숫자">
+									<label class="form-label" for="cfSpareVar1">예비1 (varchar type)</label>
+									<input type="text" class="form-control" id="cfSpareVar1" placeholder="영문(대소문자),숫자">
 								</div>
 								<div class="col mx-auto">
-									<label class="form-label" for="registFirstNameEng">예비3 (varchar type)</label>
-									<input type="text" class="form-control" id="registFirstNameEng" placeholder="영문(대소문자),숫자">
-								</div>
-							</div>
-							<div class="row m-4">
-								<div class="col mx-auto">
-									<label class="form-label" for="registFirstNameEng1">예비3 (varchar type)</label>
-									<input type="text" class="form-control" id="registFirstNameEng1" placeholder="영문(대소문자),숫자">
-								</div>
-								<div class="col mx-auto">
-									<label class="form-label" for="registFirstNameEng2">예비4 (varchar type)</label>
-									<input type="text" class="form-control" id="registFirstNameEng2" placeholder="영문(대소문자),숫자">
+									<label class="form-label" for="cfSpareVar2">예비2 (varchar type)</label>
+									<input type="text" class="form-control" id="cfSpareVar" placeholder="영문(대소문자),숫자">
 								</div>
 							</div>
 							<div class="row m-4">
 								<div class="col mx-auto">
-									<label class="form-label" for="registFirstNameEng3">예비1 (int type)</label>
-									<input type="text" class="form-control" id="registFirstNameEng3" placeholder="숫자">
+									<label class="form-label" for="cfSpareVar3">예비3 (varchar type)</label>
+									<input type="text" class="form-control" id="cfSpareVar3" placeholder="영문(대소문자),숫자">
 								</div>
 								<div class="col mx-auto">
-									<label class="form-label" for="registFirstNameEng4">예비2 (int type)</label>
-									<input type="text" class="form-control" id="registFirstNameEng4" placeholder="숫자">
+									<label class="form-label" for="cfSpareVar4">예비4 (varchar type)</label>
+									<input type="text" class="form-control" id="cfSpareVar4" placeholder="영문(대소문자),숫자">
 								</div>
 							</div>
 							<div class="row m-4">
 								<div class="col mx-auto">
-									<label class="form-label" for="registFirstNameEng5">예비3 (int type)</label>
-									<input type="text" class="form-control" id="registFirstNameEng5" placeholder="숫자">
+									<label class="form-label" for="cfSpareInt1">예비1 (int type)</label>
+									<input type="text" class="form-control" id="cfSpareInt1" placeholder="숫자">
 								</div>
 								<div class="col mx-auto">
-									<label class="form-label" for="registFirstNameEng6">예비4 (int type)</label>
-									<input type="text" class="form-control" id="registFirstNameEng6" placeholder="숫자">
+									<label class="form-label" for="cfSpareInt2">예비2 (int type)</label>
+									<input type="text" class="form-control" id="cfSpareInt2" placeholder="숫자">
+								</div>
+							</div>
+							<div class="row m-4">
+								<div class="col mx-auto">
+									<label class="form-label" for="cfSpareInt3">예비3 (int type)</label>
+									<input type="text" class="form-control" id="cfSpareInt3" placeholder="숫자">
+								</div>
+								<div class="col mx-auto">
+									<label class="form-label" for="cfSpareInt4">예비4 (int type)</label>
+									<input type="text" class="form-control" id="cfSpareInt4" placeholder="숫자">
 								</div>
 							</div>
 						</div>
@@ -253,13 +253,13 @@
 								</button>
 							</div>
 							<div class="col px-4" style="text-align: right;">
-								<button class="btn btn-danger" type="button">
+								<button class="btn btn-danger" type="button" id="cfCancel">
 									<i class="fa-duotone fa-x"></i>
 								</button>
-								<button class="btn btn-danger" type="button">
+								<button class="btn btn-danger" type="button" id="cfDel">
 									<i class="fa-regular fa-trash-can"></i>
 								</button>
-								<button class="btn btn-success" type="button">
+								<button class="btn btn-success" type="button" id="cfExcel">
 									<i class="fa-regular fa-file-excel"></i>
 								</button>
 							</div>
@@ -288,5 +288,6 @@
 	    <!-- Footer End -->
 	</form>
 	<script src="../js/list.js"></script>
+	<script src="../js/sidebar.js"></script>
 </body>
 </html>
