@@ -55,7 +55,7 @@
 					<img src="../images/men.png" class="border border-3 rounded-circle" style="height: 35%; width: 35%;" alt="">
 				</div>
 				<div class="col-2 text-start">
-					<span class="fs-5">Tony Chang</span>
+					<span class="fs-5">Jiwon Shin</span>
 					<br>
 					<span class="fs-6">Administrator</span>
 				</div>
@@ -74,22 +74,16 @@
 		        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 			        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 			          <li class="nav-item">
-			            <a class="nav-link active" aria-current="page" href="#">회원관리</a>
+			            <a class="nav-link active" aria-current="page" href="codeGroupList.html">코드그룹</a>
 			          </li>
 			          <li class="nav-item">
-			            <a class="nav-link" href="#">서비스관리</a>
+			            <a class="nav-link" href="codeGroupForm.html">코드그룹관리</a>
 			          </li>
 			          <li class="nav-item">
-			            <a class="nav-link" href="#">사이트관리</a>
+			            <a class="nav-link" href="codeList.html">코드</a>
 			          </li>
 			          <li class="nav-item">
-			            <a class="nav-link" href="#">로그관리</a>
-			          </li>
-			          <li class="nav-item">
-			            <a class="nav-link" href="#">시스템관리</a>
-			          </li>
-			          <li class="nav-item">
-			            <a class="nav-link" href="#">시스템관리</a>
+			            <a class="nav-link" href="codeForm.html">코드관리</a>
 			          </li>
 			        </ul>
 		        </div>
@@ -102,52 +96,69 @@
 				    <ul class="list-unstyled ps-0">
 				      <li class="mb-1">
 				        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-				          Home
+				          페이지 관리
 				        </button>
 				        <div class="collapse show" id="home-collapse">
 				          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Overview</a></li>
-				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Updates</a></li>
-				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Reports</a></li>
+				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">팝업관리</a></li>
+				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">배너관리</a></li>
+				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">회사소개</a></li>
+				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">회원가입</a></li>
+				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">상품상세</a></li>
 				          </ul>
 				        </div>
 				      </li>
 				      <li class="mb-1">
 				        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-				          Dashboard
+				          회원관리
 				        </button>
 				        <div class="collapse" id="dashboard-collapse">
 				          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Overview</a></li>
-				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Weekly</a></li>
-				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Monthly</a></li>
-				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Annually</a></li>
+				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">회원목록</a></li>
+				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">탈퇴회원</a></li>
 				          </ul>
 				        </div>
 				      </li>
 				      <li class="mb-1">
 				        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-				          Orders
+				          판매관리
 				        </button>
 				        <div class="collapse" id="orders-collapse">
 				          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New</a></li>
-				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Processed</a></li>
-				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Shipped</a></li>
-				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Returned</a></li>
+				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">판매목록</a></li>
+				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">판매등록</a></li>
+				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">판매분류관리</a></li>
+				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">판매후기관리</a></li>
 				          </ul>
 				        </div>
 				      </li>
 				      <li class="border-top my-3"></li>
 				      <li class="mb-1">
 				        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-				          Account
+				          주문관리
 				        </button>
 				        <div class="collapse" id="account-collapse">
 				          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New...</a></li>
 				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Profile</a></li>
 				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Settings</a></li>
+				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Sign out</a></li>
+				          </ul>
+				        </div>
+				      </li>
+				      <li class="mb-1">
+				        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+				          분석관리
+				        </button>
+				      </li>
+				      <li class="mb-1">
+				        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+				          문의관리
+				        </button>
+				        <div class="collapse" id="account-collapse">
+				          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded"></a></li>
+				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">문의목록</a></li>
+				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded"></a></li>
 				            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Sign out</a></li>
 				          </ul>
 				        </div>
