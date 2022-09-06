@@ -48,6 +48,10 @@
     		height: 45px;
     	}
     	
+    	.container {
+    		margin: 0px 0px 0px 0px;
+    	}
+    	
     	.saleRegF {
     		border: 1px solid black;
     		height: 100%;
@@ -55,12 +59,18 @@
     	
     	.saleRegMenu {
     		border: 1px solid lightgray;
+    		border-radius: 5px;
     		margin: 10px;
     	}
     	
     	th {
-    		width: 100px;
+    		width: 160px;
     		text-indent: 10px;
+    	}
+    	
+    	p {
+    		font-weight: bold;
+    		margin: 15px;
     	}
     </style>
 </head>
@@ -80,51 +90,221 @@
     <!-- Navbar End -->
     <!-- Contact Start -->
     
-    <div class="container-fluid" style="margin: 1rem 0;">
-       <div class="col p-2">
-           <div class="saleRegF">
-           	   <i class="fa-sharp fa-solid fa-square-1"></i>
-           	   <h5>기본정보</h5>
-           	   <div class="saleRegMenu">
-           	   	   <table class="m-2">
-           	   	   	   <tr>
-        	   	   	   	   <th>제목</th>
-        	   	   	   	   <td>
-        	   	   	   	   	   <input class="form-control" type="text" style="width: 1000px;" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
-        	   	   	   	   </td>
-           	   	   	   </tr>
-           	   	   </table>
-           	   </div>
-           	   <div class="saleRegMenu">
-           	   	   <table class="m-2">
-           	   	   	   <tr>
-        	   	   	   	   <th>카테고리</th>
-        	   	   	   	   <td>
-        	   	   	   	   	   <input class="form-control" type="text" style="width: 1000px;" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
-        	   	   	   	   </td>
-           	   	   	   </tr>
-           	   	   	   <tr>
-        	   	   	   	   <th></th>
-        	   	   	   	   <td>
-        	   	   	   	   	   <input class="form-control" type="text" style="width: 1000px;" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
-        	   	   	   	   </td>
-           	   	   	   </tr>
-           	   	   	   <tr>
-        	   	   	   	   <th></th>
-        	   	   	   	   <td>
-        	   	   	   	   	   <input class="form-control" type="text" style="width: 1000px;" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
-        	   	   	   	   </td>
-           	   	   	   </tr>
-           	   	   </table>
-           	   </div>
-           	   <i class="fa-solid fa-square-2"></i>
-           	   <h5>가격설정</h5>
-           	   <i class="fa-solid fa-square-3"></i>
-           	   <i class="fa-solid fa-square-4"></i>
-           	   <i class="fa-solid fa-square-5"></i>
-           </div>
-       </div>
-    </div>
+	<div class="container" style="margin: 1rem 0;">
+		<div class="saleRegF">
+			<div class="row mb-3">
+				<h5>기본정보</h5>
+			</div>
+			<div class="saleRegMenu">
+				<div class="row">
+					<div class="col-2 pe-0">
+						<p>제목</p>
+					</div>
+					<div class="col">
+						<table class="m-2">
+							<tr>
+								<td>
+									<input class="form-control" type="text" style="width: 1000px;" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="saleRegMenu">
+				<div class="row">
+					<div class="col-2 pe-0">
+						<p>카테고리</p>
+					</div>
+					<div class="col">
+						<table class="m-2">
+							<tr>
+								<th>상위 카테고리</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+							<tr>
+								<th>하위 카테고리</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+							<tr>
+								<th>3차 카테고리</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="saleRegMenu">
+				<div class="row">
+					<div class="col-2 pe-0">
+						<p>서비스 타입</p>
+					</div>
+					<div class="col">
+						<table class="m-2">
+							<tr>
+								<th>기술 수준</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+							<tr>
+								<th>팀 규모</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+							<tr>
+								<th>상주 여부</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+							<tr>
+								<th>카테고리</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+							<tr>
+								<th>개발 언어</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+							<tr>
+								<th>프레임워크</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+							<tr>
+								<th>라이브러리</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+							<tr>
+								<th>DBMS</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-5 mb-3">
+				<h5>가격설정</h5>
+			</div>
+			<div class="saleRegMenu">
+				<div class="row">
+					<div class="col-2 pe-0">
+						<p>가격정보</p>
+					</div>
+					<div class="col">
+						<table class="m-2">
+							<tr>
+								<th>제목</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+							<tr>
+								<th>설명</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+							<tr>
+								<th>금액</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+							<tr>
+								<th>작업 기간</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+							<tr>
+								<th>수정 횟수</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+							<tr>
+								<th>반응형 웹</th>
+							</tr>
+							<tr>
+								<th>콘텐츠 업로드</th>
+							</tr>
+							<tr>
+								<th>소스 코드 제공</th>
+							</tr>
+							<tr>
+								<th>맞춤 디자인 제공</th>
+							</tr>
+							<tr>
+								<th>기능 추가</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+							<tr>
+								<th>페이지 수</th>
+								<td>
+									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="saleRegMenu">
+				<div class="row">
+					<div class="col-2 pe-0">
+						<p>추가옵션</p>
+					</div>
+					<div class="col">
+						<table class="m-2">
+							<tr>
+								<th>빠른 작업</th>
+								<td></td>
+							</tr>
+							<tr>
+								<th>추가 수정</th>
+							</tr>
+							<tr>
+								<th>반응형 웹</th>
+							</tr>
+							<tr>
+								<th>콘텐츠 업로드</th>
+							</tr>
+							<tr>
+								<th>소스 코드 제공</th>
+							</tr>
+							<tr>
+								<th>맞춤 디자인 제공</th>
+							</tr>
+							<tr>
+								<th>기능 추가</th>
+							</tr>
+							<tr>
+								<th>페이지 추가</th>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer mt-5 pt-5">
         <div class="container py-5">
