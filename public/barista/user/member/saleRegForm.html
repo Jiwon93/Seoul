@@ -35,6 +35,12 @@
     <script src="https://kit.fontawesome.com/059fbc3cf8.js" crossorigin="anonymous"></script>
     
     <style type="text/css">
+    
+    	table {
+    		border-collapse: separate;
+    		border-spacing: 3px;
+    	}
+    
     	label {
     		font-weight: bold;
     	}
@@ -48,12 +54,9 @@
     		height: 45px;
     	}
     	
-    	.container {
-    		margin: 0px 0px 0px 0px;
-    	}
-    	
     	.saleRegF {
-    		border: 1px solid black;
+    		border: 1px solid gray;
+    		border-radius: 5px;
     		height: 100%;
     	}
     	
@@ -65,7 +68,25 @@
     	
     	th {
     		width: 160px;
+    		height: 40px;
     		text-indent: 10px;
+    		border-radius: 5px;
+    	}
+    	
+    	th, td {
+    		background-color: #FAFAFC;
+    	}
+    	
+    	.checkOption {
+    		text-align: right;
+    	}
+    	
+    	.form-check-input {
+    		margin-right: 10px;
+    	}
+    	
+    	.form-select {
+    		width: 840px;
     	}
     	
     	p {
@@ -77,23 +98,27 @@
 
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="../../index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <img src="../images/logo.png" alt="" style="width: 60px; height: 60px;">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="pe-3">
-            	<button class="btn btn-primary" type="button" onclick="location.href='./user/member/memberRegFormB.html'">만렙등록</button>
-            </div>
+    <nav class="container sticky-top p-0">
+    	<div class="row">
+	    	<div class="col-6 p-4">
+		        <a href="../../index.html">
+		            <img src="../images/logo.png" alt="" style="width: 60px; height: 60px;">
+		        </a>
+	        </div>
+	        <div class="col-6 text-end p-4">
+	            <div>
+	            	<button class="btn btn-primary" type="button" onclick="location.href='./user/member/memberRegFormB.html'">만렙등록</button>
+	            </div>
+	        </div>
         </div>
     </nav>
     <!-- Navbar End -->
     <!-- Contact Start -->
     
-	<div class="container" style="margin: 1rem 0;">
+	<div class="container">
 		<div class="saleRegF">
-			<div class="row mb-3">
-				<h5>기본정보</h5>
+			<div class="row m-2 mt-4">
+				<h5>1. 기본정보</h5>
 			</div>
 			<div class="saleRegMenu">
 				<div class="row">
@@ -121,19 +146,31 @@
 							<tr>
 								<th>상위 카테고리</th>
 								<td>
-									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+									<select class="form-select">
+										<option selected>선택해주세요</option>
+										<option></option>
+										<option></option>
+									</select>
 								</td>
 							</tr>
 							<tr>
 								<th>하위 카테고리</th>
 								<td>
-									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+									<select class="form-select">
+										<option selected>선택해주세요</option>
+										<option></option>
+										<option></option>
+									</select>
 								</td>
 							</tr>
 							<tr>
 								<th>3차 카테고리</th>
 								<td>
-									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+									<select class="form-select">
+										<option selected>선택해주세요</option>
+										<option></option>
+										<option></option>
+									</select>
 								</td>
 							</tr>
 						</table>
@@ -150,57 +187,89 @@
 							<tr>
 								<th>기술 수준</th>
 								<td>
-									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+									<select class="form-select">
+										<option selected>선택해주세요</option>
+										<option></option>
+										<option></option>
+									</select>
 								</td>
 							</tr>
 							<tr>
 								<th>팀 규모</th>
 								<td>
-									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+									<select class="form-select">
+										<option selected>선택해주세요</option>
+										<option></option>
+										<option></option>
+									</select>
 								</td>
 							</tr>
 							<tr>
 								<th>상주 여부</th>
 								<td>
-									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+									<select class="form-select">
+										<option selected>선택해주세요</option>
+										<option></option>
+										<option></option>
+									</select>
 								</td>
 							</tr>
 							<tr>
 								<th>카테고리</th>
 								<td>
-									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+									<select class="form-select">
+										<option selected>선택해주세요</option>
+										<option></option>
+										<option></option>
+									</select>
 								</td>
 							</tr>
 							<tr>
 								<th>개발 언어</th>
 								<td>
-									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+									<select class="form-select">
+										<option selected>선택해주세요</option>
+										<option></option>
+										<option></option>
+									</select>
 								</td>
 							</tr>
 							<tr>
 								<th>프레임워크</th>
 								<td>
-									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+									<select class="form-select">
+										<option selected>선택해주세요</option>
+										<option></option>
+										<option></option>
+									</select>
 								</td>
 							</tr>
 							<tr>
 								<th>라이브러리</th>
 								<td>
-									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+									<select class="form-select">
+										<option selected>선택해주세요</option>
+										<option></option>
+										<option></option>
+									</select>
 								</td>
 							</tr>
 							<tr>
 								<th>DBMS</th>
 								<td>
-									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+									<select class="form-select">
+										<option selected>선택해주세요</option>
+										<option></option>
+										<option></option>
+									</select>
 								</td>
 							</tr>
 						</table>
 					</div>
 				</div>
 			</div>
-			<div class="row mt-5 mb-3">
-				<h5>가격설정</h5>
+			<div class="row m-2 mt-5 mb-3">
+				<h5>2. 가격설정</h5>
 			</div>
 			<div class="saleRegMenu">
 				<div class="row">
@@ -212,17 +281,17 @@
 							<tr>
 								<th>제목</th>
 								<td>
-									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+									<input class="form-control" type="text" style="width: 840px;" placeholder="ex. 00 웹사이트">
 								</td>
 							</tr>
 							<tr>
 								<th>설명</th>
 								<td>
-									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+									<textarea class="form-control" placeholder="-메인페이지 시안 1개 제공, 공지사항, FAQ 페이지, SNS로그인 연동"></textarea>
 								</td>
 							</tr>
 							<tr>
-								<th>금액</th>
+								<th>금액(VAT 포함)</th>
 								<td>
 									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
 								</td>
@@ -230,37 +299,53 @@
 							<tr>
 								<th>작업 기간</th>
 								<td>
-									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+									<select class="form-select">
+										<option selected>선택해주세요</option>
+										<option></option>
+										<option></option>
+									</select>
 								</td>
 							</tr>
 							<tr>
 								<th>수정 횟수</th>
 								<td>
-									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+									<select class="form-select">
+										<option selected>선택해주세요</option>
+										<option></option>
+										<option></option>
+									</select>
 								</td>
 							</tr>
 							<tr>
 								<th>반응형 웹</th>
+								<td class="checkOption"><input type="checkbox" class="form-check-input"></td>
 							</tr>
 							<tr>
 								<th>콘텐츠 업로드</th>
+								<td class="checkOption"><input type="checkbox" class="form-check-input"></td>
 							</tr>
 							<tr>
 								<th>소스 코드 제공</th>
+								<td class="checkOption"><input type="checkbox" class="form-check-input"></td>
 							</tr>
 							<tr>
 								<th>맞춤 디자인 제공</th>
+								<td class="checkOption"><input type="checkbox" class="form-check-input"></td>
 							</tr>
 							<tr>
 								<th>기능 추가</th>
 								<td>
-									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+									<select class="form-select">
+										<option selected>선택해주세요</option>
+										<option></option>
+										<option></option>
+									</select>
 								</td>
 							</tr>
 							<tr>
 								<th>페이지 수</th>
 								<td>
-									<input class="form-control" type="text" placeholder="서비스를 잘 드러낼 수 있는 제목을 입력해주세요">
+									<input class="form-control" type="text" placeholder="입력해주세요">
 								</td>
 							</tr>
 						</table>
@@ -276,28 +361,102 @@
 						<table class="m-2">
 							<tr>
 								<th>빠른 작업</th>
-								<td></td>
+								<td class="checkOption" style="width: 840px;"><input type="checkbox" class="form-check-input"></td>
 							</tr>
 							<tr>
 								<th>추가 수정</th>
+								<td class="checkOption"><input type="checkbox" class="form-check-input"></td>
 							</tr>
 							<tr>
 								<th>반응형 웹</th>
+								<td class="checkOption"><input type="checkbox" class="form-check-input"></td>
 							</tr>
 							<tr>
 								<th>콘텐츠 업로드</th>
+								<td class="checkOption"><input type="checkbox" class="form-check-input"></td>
 							</tr>
 							<tr>
 								<th>소스 코드 제공</th>
+								<td class="checkOption"><input type="checkbox" class="form-check-input"></td>
 							</tr>
 							<tr>
 								<th>맞춤 디자인 제공</th>
+								<td class="checkOption"><input type="checkbox" class="form-check-input"></td>
 							</tr>
 							<tr>
 								<th>기능 추가</th>
+								<td class="checkOption"><input type="checkbox" class="form-check-input"></td>
 							</tr>
 							<tr>
 								<th>페이지 추가</th>
+								<td class="checkOption"><input type="checkbox" class="form-check-input"></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="row m-2 mt-5 mb-3">
+				<h5>3. 서비스 설명</h5>
+			</div>
+			<div class="saleRegMenu">
+				<div class="row">
+					<div class="col-2 pe-0">
+						<p>가격정보</p>
+					</div>
+					<div class="col">
+						<table class="m-2">
+							<tr>
+								<th>서비스 설명</th>
+								<td>
+									<textarea class="form-control" style="width: 840px;" rows="15" placeholder=""></textarea>
+								</td>
+							</tr>
+							<tr>
+								<th>서비스 제공 절차</th>
+								<td>
+									<textarea class="form-control" rows="15" placeholder=""></textarea>
+								</td>
+							</tr>
+							<tr>
+								<th>의뢰인 준비사항</th>
+								<td>
+									<textarea class="form-control" rows="15" placeholder=""></textarea>
+								</td>
+							</tr>
+							<tr>
+								<th>취소 및 환불 규정</th>
+								<td>
+									<a class="btn btn-outline-primary w-100" href="#">[IT 프로그래밍>웹] 취소 및 환불 규정 보기</a>
+								</td>
+							</tr>
+							<tr>
+								<th>자주묻는질문</th>
+								<td>
+									<a class="btn btn-outline-primary w-100" href="#">+질문 추가</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="row m-2 mt-5 mb-3">
+				<h5>4. 이미지</h5>
+			</div>
+			<div class="row m-2 mt-5 mb-3">
+				<h5>5. 요청사항</h5>
+			</div>
+			<div class="saleRegMenu">
+				<div class="row">
+					<div class="col-2 pe-0">
+						<p>가격정보</p>
+					</div>
+					<div class="col">
+						<table class="m-2">
+							<tr>
+								<th>작업전 요청사항(선택)</th>
+								<td>
+									<a class="btn btn-outline-primary w-100" href="#">+요청사항 추가</a>
+								</td>
 							</tr>
 						</table>
 					</div>
