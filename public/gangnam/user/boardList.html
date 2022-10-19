@@ -6,49 +6,7 @@
 	<title>sgworld | 게시판</title>
 	
 	<script src="https://kit.fontawesome.com/059fbc3cf8.js" crossorigin="anonymous"></script>
-	
-	<style type="text/css">
-		.boarder{
-			display: flex;
-			justify-content: center;
-		}
-		.board{
-			display: inline-flex;
-			margin-left: 40px;
-			margin-right: 40px;
-			margin-bottom: 20px;
-		}
-		.post1{
-			border-bottom: 1px solid #DEDEDE;
-			box-sizing: border-box;
-			width: 500px;
-			display: inline-block;
-		}
-		
-		.state1{
-			font-size: 1.3em;
-			font-weight: bold;
-			color: #589939;
-			height: 32px;
-		}
-		
-		.state2{
-			font-size: 1.3em;
-			font-weight: bold;
-			color: #FF7A00;
-		}
-		
-		.title1{
-			font-size: 1.3em;
-			font-weight: bold;
-		}
-		
-		.icon{
-			font-size: 0.8em;
-			margin-bottom: 20px;
-			color: #9D9D9D;
-		}
-	</style>
+	<link href="../css/user/boardList.css" rel="stylesheet">
 </head>
 <body>
 	<!-- header s -->
@@ -59,26 +17,28 @@
 	
 	<!-- contend s -->
 	<section>
-		<h2>자유게시판</h2>
+		<div class="boarderTitle">
+			<h2>자유게시판</h2> <!-- 게시판 타이틀 -->
+		</div>
 		<section class="boarder">
 			<article class="board">
 				<div class="post1">
 					<div class="state1">
-						<span>NOW</span>
+						<span>NOW</span> <!-- 작성상태(최신글, 조회수 높은 글 등) -->
 					</div>
 					<div class="title1">
-						<span>교사인데 오늘 진짜 마음 울렁울렁함..</span>
+						<span>교사인데 오늘 진짜 마음 울렁울렁함..</span> <!-- 글 제목 -->
 					</div>
 					<div>
-						<p>해당 게시글에 대한 내용이 들어가는 곳입니다.</p>
+						<p>해당 게시글에 대한 내용이 들어가는 곳입니다.</p> <!-- 글 내용(게시판 리스트에 보이는 글자 수 제한 둘 것) -->
 					</div>
 					<div>
-						<p>nickname</p>
+						<p>nickname</p> <!-- 작성자 닉네임 -->
 					</div>
 					<div class="icon">
-						<i class="fa-solid fa-eye">99</i>
-						<i class="fa-regular fa-thumbs-up">99</i>
-						<i class="fa-regular fa-message">99</i>
+						<i class="fa-solid fa-eye">99</i> <!-- 조회수 -->
+						<i class="fa-regular fa-thumbs-up">99</i> <!-- 좋아요 -->
+						<i class="fa-regular fa-message">99</i> <!-- 댓글수 -->
 					</div>
 				</div>
 			</article>
