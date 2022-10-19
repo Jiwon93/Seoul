@@ -32,14 +32,35 @@
 		.sgworldLive{
 			padding: 15px 0;
 		}
+		.boardField1{
+			display: flex;
+			justify-content: space-between;
+			height: 80px;
+		}
+		.boardField1 p{
+			margin: 0;
+		}
+		.boardField2 {
+			display: flex;
+		}
+		.boardField3{
+			display: flex;
+			align-items: center;
+		}
 		.map{
 			width: 430px;
 			height: 280px;
 		}
 		.profil{
-			width: 50px;
-			height: 50px;
+			width: 60px;
+			height: 60px;
 			border-radius: 30px;
+		}
+		.profilFiled{
+			padding-right: 5px;
+		}
+		.sgworldTitle{
+			font-weight: bold;
 		}
 		.word{
 			padding: 3px 10px;
@@ -47,9 +68,14 @@
 			border-radius: 10px;
 			font-size: 0.7em;
 		}
+		.nickname{
+			font-size: 0.7em;
+			padding: 3px 3px;
+		}
 		.icon{
 			color: #D9D9D9;
 			font-size: 0.7em;
+			line-height: 110px;
 		}
 	</style>
 </head>
@@ -69,24 +95,32 @@
 			<article class="board">
 				<div class="post1">
 					<div class="sgworldLive">
-						<a href="#"><img class="map" src="../image/user/map1.png"></a>
+						<a href="#"><img class="map" src="../image/user/map1.png"></a> <!-- 라이브 방 -->
 					</div>
-					<div>
-						<img class="profil" src="../image/user/profil1.png">
-					</div>
-					<div>
-						<h4>일요일 즐거운 일각코</h4>
-					</div>
-					<div>
-						<p>싸게타운오줌싸게</p> <!-- 작성자 닉네임 -->
-					</div>
-					<div>
-						<span class="word">코딩</span>
-						<span class="word">JAVA</span>
-						<span class="word">소통</span>
-					</div>
-					<div class="icon">
-						<i class="fa-solid fa-eye">99</i> <!-- 조회수 -->
+					<div class="boardField1">
+						<div class="boardField2">
+							<div class="profilFiled">
+								<img class="profil" src="../image/user/profil1.png"> <!-- 프로필 사진 -->
+							</div>
+							<div>
+								<div class="sgworldTitle">
+									<p>일요일 즐거운 일각코</p> <!-- 생성 제목 -->
+								</div>
+								<div class="nickname">
+									<p>싸게타운오줌싸게</p> <!-- 생성자 닉네임 -->
+								</div>
+								<div class="boardField3"> <!-- 해시타그 -->
+									<div>
+										<span class="word">코딩</span>
+										<span class="word">JAVA</span>
+										<span class="word">소통</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="icon">
+							<i class="fa-solid fa-eye">99</i> <!-- 조회수 -->
+						</div>
 					</div>
 				</div>
 			</article>
@@ -95,22 +129,96 @@
 					<div class="sgworldLive">
 						<a href="#"><img class="map" src="../image/user/map2.png"></a>
 					</div>
-					<div>
-						<img class="profil" src="../image/user/profil1.png">
+					<div class="boardField1">
+						<div class="boardField2">
+							<div class="profilFiled">
+								<img class="profil" src="../image/user/profil1.png">
+							</div>
+							<div>
+								<div class="sgworldTitle">
+									<p>일요일 즐거운 일각코</p>
+								</div>
+								<div class="nickname">
+									<p>싸게타운오줌싸게</p> 
+								</div>
+								<div class="boardField3">
+									<div>
+										<span class="word">코딩</span>
+										<span class="word">JAVA</span>
+										<span class="word">소통</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="icon">
+							<i class="fa-solid fa-eye">99</i> 
+						</div>
 					</div>
-					<div>
-						<h4>일요일 즐거운 일각코</h4>
+				</div>
+			</article>
+		</section>
+		<section class="boarder">
+			<article class="board">
+				<div class="post1">
+					<div class="sgworldLive">
+						<a href="#"><img class="map" src="../image/user/map3.png"></a>
 					</div>
-					<div>
-						<p>싸게타운오줌싸게</p> <!-- 작성자 닉네임 -->
+					<div class="boardField1">
+						<div class="boardField2">
+							<div class="profilFiled">
+								<img class="profil" src="../image/user/profil1.png">
+							</div>
+							<div>
+								<div class="sgworldTitle">
+									<p>일요일 즐거운 일각코</p>
+								</div>
+								<div class="nickname">
+									<p>싸게타운오줌싸게</p> 
+								</div>
+								<div class="boardField3">
+									<div>
+										<span class="word">코딩</span>
+										<span class="word">JAVA</span>
+										<span class="word">소통</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="icon">
+							<i class="fa-solid fa-eye">99</i> 
+						</div>
 					</div>
-					<div>
-						<span class="word">코딩</span>
-						<span class="word">JAVA</span>
-						<span class="word">소통</span>
+				</div>
+			</article>
+			<article class="board">
+				<div class="post1">
+					<div class="sgworldLive">
+						<a href="#"><img class="map" src="../image/user/map4.png"></a>
 					</div>
-					<div class="icon">
-						<i class="fa-solid fa-eye">99</i> <!-- 조회수 -->
+					<div class="boardField1">
+						<div class="boardField2">
+							<div class="profilFiled">
+								<img class="profil" src="../image/user/profil1.png">
+							</div>
+							<div>
+								<div class="sgworldTitle">
+									<p>일요일 즐거운 일각코</p>
+								</div>
+								<div class="nickname">
+									<p>싸게타운오줌싸게</p>
+								</div>
+								<div class="boardField3">
+									<div>
+										<span class="word">코딩</span>
+										<span class="word">JAVA</span>
+										<span class="word">소통</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="icon">
+							<i class="fa-solid fa-eye">99</i> 
+						</div>
 					</div>
 				</div>
 			</article>
