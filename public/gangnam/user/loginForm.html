@@ -17,18 +17,32 @@
 			height: 50px;
 			padding-right: 15px;
 		}
+		.loginBody{
+			display: flex;
+			justify-content: center;
+		}
 		.loginBox{
 			border: 1px solid #DEDEDE;
 			width: 550px;
 		}
-		.inputId{
+		.inputIdBox{
 			display: flex;
 			justify-content: center;
 			padding: 10px 0;
 		}
-		.inputPw{
+		.inputId{
+			border: 1px solid #DEDEDE;
+			width: 420px;
+			height: 40px;
+		}
+		.inputPwBox{
 			display: flex;
 			justify-content: center;
+		}
+		.inputPw{
+			border: 1px solid #DEDEDE;
+			width: 420px;
+			height: 40px;
 		}
 		.loignCheck{
 			display: flex;
@@ -36,7 +50,40 @@
 			align-items: center;
 			padding-right: 30px;
 		}
-		
+		.loginBtnBox{
+			display: flex;
+			justify-content: center;
+		}
+		.loginBtn{
+			background-color: #434A72;
+			color: white;
+			border-radius: 5px;
+		}
+		.easyLoginHead{
+			display: flex;
+			justify-content: center;
+			font-weight: bold;
+		}
+		.easyLoginLogo{
+			display: flex;
+			justify-content: center;
+		}
+		.easyLoginLogo img{
+			width: 50px;
+			height: 50px;
+			border-radius: 70%;
+			padding: 0 15px;
+		}
+		.loginFooterBox{
+			display: flex;
+			justify-content: center;
+		}
+		.loginFooter{
+			display: flex;
+			justify-content: space-between;
+			width: 550px;
+			align-items: center;
+		}
 	</style>
 </head>
 <body>
@@ -54,26 +101,26 @@
 				<h1>로그인</h1>
 			</div>
 		</div>
-		<section class="loginBox">
-			<article>
-				<div class="inputId">
-					<input type="text">
+		<section class="loginBody">
+			<article class="loginBox">
+				<div class="inputIdBox">
+					<input class="inputId" type="text" placeholder="아이디">
 				</div>
-				<div class="inputPw">
-					<input type="password">
+				<div class="inputPwBox">
+					<input class="inputPw" type="password" placeholder="비밀번호">
 				</div>
 				<div class="loignCheck">
 					<i class="fa-regular fa-circle-check"></i>
 					<p>로그인 상태 유지</p>
 				</div>
-				<div>
-					<button type="button">로그인</button>
+				<div class="loginBtnBox">
+					<button class="loginBtn" type="button">로그인</button>
 				</div>
 				<div>
-					<div>
+					<div class="easyLoginHead">
 						<p>간편 로그인</p>
 					</div>
-					<div>
+					<div class="easyLoginLogo">
 						<div>
 							<a><img alt="네이버" src="../image/user/naver.png"></a>
 						</div>
@@ -90,9 +137,11 @@
 				</div>
 			</article>
 		</section>
-		<div>
-			<div><a>아이디/비밀번호 찾기</a></div>
-			<div><a>회원가입</a></div>
+		<div class="loginFooterBox">
+			<div class="loginFooter">
+				<div><a>아이디/비밀번호 찾기</a></div>
+				<div><a>회원가입</a></div>
+			</div>
 		</div>
 	</section>
 	<!-- contend e -->
