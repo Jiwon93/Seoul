@@ -87,8 +87,44 @@ const player = {
 //player.lastName = "potato";
 //console.log(player);
 
+/*
 console.log("Hello my name is Jiwon");
 console.log("Hello my name is Jiwon1");
 console.log("Hello my name is Jiwon2");
 console.log("Hello my name is Jiwon3");
 console.log("Hello my name is Jiwon4");
+*/
+
+/*
+function sayHello(nameOfPerson, age){
+	console.log("Hello my name is" + nameOfPerson + " and I'm " + age);
+}
+
+sayHello();
+console.log("Hello");
+sayHello("jiwon", 10);
+sayHello("jiwon1", 23);
+sayHello("jiwon2", 30);
+*/
+/*
+function plus(firstNumber, secondNumber) {
+	console.log(firstNumber + secondNumber);
+}
+
+function divide(a, b) {
+	console.log(a / b);
+}
+
+plus(9, 60);
+divide(98, 20);
+*/
+
+const player = {
+	name: "jiwon",
+	sayHello: function(otherPersonsName) {
+		console.log("hello " + otherPersonsName + " nice to meet you!");
+	},
+};
+
+console.log(player.name);
+player.sayHello("lynn");
