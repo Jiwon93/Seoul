@@ -39,19 +39,56 @@
 //const sat = "sat";
 //const sun = "sun";
 
-const daysOfWeek = ["mon", "tue", "wed", "thu", "fir", "sat"];
+//const daysOfWeek = ["mon", "tue", "wed", "thu", "fir", "sat"];
 //const nonsense = [1, 2, "hello", false, null, true, "jiwon"];
 
-
 // Get Item from Array
-console.log(daysOfWeek);
+//console.log(daysOfWeek);
 
 // Add one more day to the array
-daysOfWeek.push("sun");
+//daysOfWeek.push("sun");
 
-console.log(daysOfWeek);
+//console.log(daysOfWeek);
 
-const toBuy = ["potato", "tomato", "pizza"];
-toBuy.push("kimbab");
+//const toBuy = ["potato", "tomato", "pizza"];
+//toBuy.push("kimbab");
 
-console.log(toBuy[0]);
+//console.log(toBuy[0]);
+
+//const playerName = "jiwon";
+//const playerPoints = 121212;
+//const playerHandsome = true;
+//const playerFat = "little bit";
+
+//player.name
+//player.points
+//player.handsome
+
+//player[0] == name
+//player[1] == points
+
+
+//const player = ["jiwon", 1212, false, "little bit"];
+
+/*
+const player = {
+	name: "jiwon",
+	points: 10,
+	fat: true,
+};
+*/
+//console.log(player);
+//console.log(player.name);
+//console.log(player["name"]);
+
+// constant안에 객체는 추가나 변경이 가능하다 자체는 변경이 안됨.
+//console.log(player);
+//player.fat = false;
+//player.lastName = "potato";
+//console.log(player);
+
+console.log("Hello my name is Jiwon");
+console.log("Hello my name is Jiwon1");
+console.log("Hello my name is Jiwon2");
+console.log("Hello my name is Jiwon3");
+console.log("Hello my name is Jiwon4");
