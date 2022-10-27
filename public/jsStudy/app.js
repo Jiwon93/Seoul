@@ -119,6 +119,7 @@ plus(9, 60);
 divide(98, 20);
 */
 
+/*
 const player = {
 	name: "jiwon",
 	sayHello: function(otherPersonsName) {
@@ -128,3 +129,37 @@ const player = {
 
 console.log(player.name);
 player.sayHello("lynn");
+*/
+/*
+const calculator = {
+	add: function(a, b) {
+		console.log(a + b);
+	},
+	minus: function(a, b) {
+		console.log(a - b);
+	},
+	divide: function(a, b) {
+		console.log(a / b);	
+	},
+	multiple: function(a, b) {
+		console.log(a * b);
+	},
+	power: function(a, b) {
+		console.log(a ** b);
+	},
+};
+
+calculator.add(10, 2);       // 12
+calculator.minus(10, 2);     // 8
+calculator.divide(10, 2);    // 5
+calculator.multiple(10, 2);  // 20
+calculator.power(10, 2);     // 100
+*/
+
+const age = 10;
+function calculateKrAge(ageOfForeigner) {
+	return ageOfForeigner + 2;
+}
+
+const KrAge = calculateKrAge(age);
+console.log(krAge);
