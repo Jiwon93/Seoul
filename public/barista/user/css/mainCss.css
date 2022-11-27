@@ -7,11 +7,14 @@
 .mainName {
 	color: #9E9FAB;
 	text-align: left;
+	font-size: small;
 }
 
 .mainTitle {
-	font-size: large;
+	font-size: medium;
 	text-align: left;
+	height: 65px;
+	margin-bottom: 0px;
 }
 
 .mainPay {
