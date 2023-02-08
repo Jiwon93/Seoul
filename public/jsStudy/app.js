@@ -156,6 +156,26 @@ calculator.multiple(10, 2);  // 20
 calculator.power(10, 2);     // 100
 */
 
+const calculator = {
+	plus: function(a, b) {
+		return a + b;
+	},
+	minus: function(a, b) {
+		return a - b;
+	},
+	times: function(a, b) {
+		return a * b;	
+	},
+	divide: function(a, b) {
+		return a / b;
+	},
+	power: function(a, b) {
+		return a ** b;
+	},
+};
+
+const plusResult = calculator.plus(2, 3);
+
 const age = 10;
 function calculateKrAge(ageOfForeigner) {
 	return ageOfForeigner + 2;
