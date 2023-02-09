@@ -156,6 +156,7 @@ calculator.multiple(10, 2);  // 20
 calculator.power(10, 2);     // 100
 */
 
+/*
 const calculator = {
 	plus: function(a, b) {
 		return a + b;
@@ -183,3 +184,8 @@ function calculateKrAge(ageOfForeigner) {
 
 const KrAge = calculateKrAge(age);
 console.log(krAge);
+*/
+
+const age = prompt("How old are you?");
+
+console.log(age, parseInt(age));
