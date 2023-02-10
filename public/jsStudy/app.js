@@ -192,6 +192,7 @@ const age = prompt("How old are you?");
 console.log(age, parseInt(age));
 */
 
+/*
 const age = parseInt(prompt("How old are you?"));
 
 console.log(inNaN(age));
@@ -201,6 +202,7 @@ if(condition) {
 } else {
 	/// condition === false
 }
+*/
 
 // true || true === true
 // false || true === true
@@ -212,6 +214,7 @@ if(condition) {
 // false && false === false
 
 // = value 할당 === 맞는지 확인
+/*
 if (isNaN(age) || age < 0) {
 	console.log("Please write a real positive number");
 } else if(age < 18) {
@@ -229,3 +232,6 @@ if (isNaN(age) || age < 0) {
 if((a && b) || (c && d) || (x || w)) {
 	
 }
+*/
+
+document.title ="Hello! From JS";
