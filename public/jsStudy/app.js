@@ -235,3 +235,7 @@ if((a && b) || (c && d) || (x || w)) {
 */
 
 document.title ="Hello! From JS";
+
+const title = document.getElementById("title");
+
+title.innerText = "Got you!";
