@@ -234,8 +234,22 @@ if((a && b) || (c && d) || (x || w)) {
 }
 */
 
+/*
 document.title ="Hello! From JS";
 
 const title = document.getElementById("title");
 
 title.innerText = "Got you!";
+*/
+
+const hellos = document.getElementsByClassName("hello");
+console.log(hellos);
+
+//const title = document.getElementsByTagName("h1");
+//console.log(title);
+
+//해당되는게 많아도, 첫번째 element만 가져옴
+const title = document.querySelector(".hello h1"); 
+//querySelectAll로 하면 전부가져옴
+//id 찾을시 #으로 class는 .으로 표시(css형식)
+console.log(title);
