@@ -253,3 +253,11 @@ const title = document.querySelector(".hello h1");
 //querySelectAll로 하면 전부가져옴
 //id 찾을시 #으로 class는 .으로 표시(css형식)
 console.log(title);
+
+
+
+function handleTitleClick() {
+	console.log("title was clicked!");
+	title.style.color = "blue";
+}
+title.addEventListener("click", handleTitleClick);
