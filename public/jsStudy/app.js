@@ -249,30 +249,51 @@ console.log(hellos);
 //console.log(title);
 
 //해당되는게 많아도, 첫번째 element만 가져옴
-const title = document.querySelector(".hello h1"); 
+const h1 = document.querySelector(".hello h1"); 
 //querySelectAll로 하면 전부가져옴
 //id 찾을시 #으로 class는 .으로 표시(css형식)
-console.log(title);
+console.log(h1);
 
 
 
 function handleTitleClick() {
 	console.log("title was clicked!");
-	title.style.color = "blue";
+	h1.style.color = "blue";
 }
 
 function handleMouseEnter() {
-	title.innerText = "Mouse is here!";
+	h1.innerText = "Mouse is here!";
 }
 
 function handleMouseLeave() {
-	title.innerText = "Mouse is gone!";
+	h1.innerText = "Mouse is gone!";
 }
-title.addEventListener("click", handleTitleClick);
-title.addEventListener("mouseenter", handleMouseEnter);
-title.addEventListener("mouseleave", handleMouseLeave);
 
+function handleWindowResize() {
+	document.body.style.backgroundColor = "tomato";
+}
 
+function handleWindowCopy() {
+	alert("copier");
+}
+
+function handleWindowOffline() {
+	alert("SOS no WIFI");
+}
+
+function handleWindowOnline() {
+	alert("ALL GOOD!!!!!!!!!!");
+}
+
+h1.addEventListener("click", handleTitleClick);
+h1.addEventListener("mouseenter", handleMouseEnter);
+h1.addEventListener("mouseleave", handleMouseLeave);
+
+window.addEventListener("resize", handleWindowResize);
+window.addEventListener("copy", handleWindowCopy);
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
+/*
 const jpg_path = document.querySelector(".inputFile #jpg_file").files[0].path;
 
 function fcn_jpg2csv(){
@@ -281,4 +302,5 @@ function fcn_jpg2csv(){
 }
 
 jpg_path.addEventListener("change", fcn_jpg2csv);
+*/
     
