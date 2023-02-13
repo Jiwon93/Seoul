@@ -271,3 +271,14 @@ function handleMouseLeave() {
 title.addEventListener("click", handleTitleClick);
 title.addEventListener("mouseenter", handleMouseEnter);
 title.addEventListener("mouseleave", handleMouseLeave);
+
+
+const jpg_path = document.querySelector(".inputFile #jpg_file").files[0].path;
+
+function fcn_jpg2csv(){
+    const result = document.querySelector("div .result");
+    result.innerText = '${jpg_path}';
+}
+
+jpg_path.addEventListener("change", fcn_jpg2csv);
+    
