@@ -270,7 +270,7 @@ function handleMouseLeave() {
 }
 
 function handleWindowResize() {
-	document.body.style.backgroundColor = "tomato";
+	document.body.style.backgroundColor = "green";
 }
 
 function handleWindowCopy() {
