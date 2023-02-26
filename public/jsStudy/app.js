@@ -338,14 +338,17 @@ jpg_path.addEventListener("change", fcn_jpg2csv);
 //const loginForm = document.querySelector("#login-form");
 //const loginInput = loginForm.querySelector("input");
 //const loginButton = loginForm.querySelector("button");    
+const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
-const loginButton = document.querySelector("#login-form button");
+//const loginButton = document.querySelector("#login-form button");
 
-function onLoginBtnClick() {
+function onLoginSubmit(event) {
 	//console.log(loginInput.value);
 	//console.log("hello", loginInput.value);
-	const username = loginInput.value;
-	console.log(username);
+	tomato.preventDefault();
+	console.log(loginInput.value);
+	//const username = loginInput.value;
+	//console.log(username);
 	/*
 	if (username === "") {
 		alert("Please write your name");
@@ -355,4 +358,5 @@ function onLoginBtnClick() {
 	*/
 }
 
-loginButton.addEventListener("click", onLoginBtnClick); 
+loginForm.addEventListener("submit", onLoginSubmit);
+//loginButton.addEventListener("click", onLoginBtnClick); 
