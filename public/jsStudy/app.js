@@ -340,14 +340,21 @@ jpg_path.addEventListener("change", fcn_jpg2csv);
 //const loginButton = loginForm.querySelector("button");    
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
+const greeting = document.querySelector("#greeting");
 //const loginButton = document.querySelector("#login-form button");
 const link = document.querySelector("a");
+
+const HIDDEN_CLASSNAME = "hidden";
 
 function onLoginSubmit(event) {
 	//console.log(loginInput.value);
 	//console.log("hello", loginInput.value);
-	tomato.preventDefault();
-	console.log(loginInput.value);
+	event.preventDefault();
+	loginForm.classList.add("hidden");
+	const username = loginInput.value;
+	//greeting.innterText = "Hello " + username;
+	greeting.innterText = `Hello ${username}`;
+	greeting.classList.remove(HIDDEN_CLASSNAME);
 	//const username = loginInput.value;
 	//console.log(username);
 	/*
