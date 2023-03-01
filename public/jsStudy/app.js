@@ -350,8 +350,9 @@ function onLoginSubmit(event) {
 	//console.log(loginInput.value);
 	//console.log("hello", loginInput.value);
 	event.preventDefault();
-	loginForm.classList.add("hidden");
+	loginForm.classList.add(HIDDEN_CLASSNAME);
 	const username = loginInput.value;
+	localStorage.setItem("username", username);
 	//greeting.innterText = "Hello " + username;
 	greeting.innterText = `Hello ${username}`;
 	greeting.classList.remove(HIDDEN_CLASSNAME);
