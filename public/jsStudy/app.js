@@ -345,6 +345,7 @@ const greeting = document.querySelector("#greeting");
 const link = document.querySelector("a");
 
 const HIDDEN_CLASSNAME = "hidden";
+const USERNAME_KEY = "username";
 
 function onLoginSubmit(event) {
 	//console.log(loginInput.value);
@@ -352,10 +353,9 @@ function onLoginSubmit(event) {
 	event.preventDefault();
 	loginForm.classList.add(HIDDEN_CLASSNAME);
 	const username = loginInput.value;
-	localStorage.setItem("username", username);
+	localStorage.setItem("USERNAME_KEY", username);
 	//greeting.innterText = "Hello " + username;
-	greeting.innterText = `Hello ${username}`;
-	greeting.classList.remove(HIDDEN_CLASSNAME);
+	paintGreetings(username);
 	//const username = loginInput.value;
 	//console.log(username);
 	/*
@@ -378,5 +378,19 @@ loginForm.addEventListener("submit", onLoginSubmit);
 //loginButton.addEventListener("click", onLoginBtnClick); 
 link.addEventListener("click", handleLinkClick);
 
+function paintGreetings(username) {
+	greeting.innerText = `Hello ${username}`;
+	greeting.classList.remove(HIDDEN_CLASSNAME);
+}
 
+const savedUsername = localStorage.getItem("USERNAME_KEY");
+
+if(savedUsername === nell) {
+	//show the form
+	loginForm.classList.remove(HIDDEN_CLASSNAME);
+	loginForm.addEventListener("submit", onLoginSubmit);
+} else {
+	// show the greetings
+	paintGreetings(savedUsername);
+}
 
