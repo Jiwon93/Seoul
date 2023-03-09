@@ -8,7 +8,7 @@ function getClock() {
 	clock.innerText = `${hours}:${minutes}:${seconds}`;
 }
 
-
+//명언준비하기
 //setTimeout(sayHello, 5000);
 getClock();
 setInterval(getClock, 1000);
