@@ -18,16 +18,6 @@ function paintGreetings(username) {
 	greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-function handleLinkClick(event) {
-	event.preventDefault();
-	console.dir(event);
-}
-
-loginForm.addEventListener("submit", onLoginSubmit);
-link.addEventListener("click", handleLinkClick);
-
-
-
 const savedUsername = localStorage.getItem("USERNAME_KEY");
 
 if(savedUsername === null) {
@@ -36,3 +26,5 @@ if(savedUsername === null) {
 } else {
 	paintGreetings(savedUsername);
 }
+
+
